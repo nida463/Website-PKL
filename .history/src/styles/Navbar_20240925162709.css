@@ -1,0 +1,29 @@
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 42px;
+  background-color: #FFFFFF;
+  width: 100%;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-items {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-item {
+  cursor: pointer;
+  font-size: 18px;
+  color: #333;
+}
+
+.nav-item:hover {
+  color: #007BFF;
+}

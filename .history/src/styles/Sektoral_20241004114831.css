@@ -1,0 +1,71 @@
+/* styles/Sektoral.css */
+.sektoral-container {
+    width: 100%;
+    max-width: 800px; /* Anda dapat menyesuaikan lebar ini */
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.search-box {
+    margin-bottom: 20px;
+}
+
+.search-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-inputs {
+    display: flex;
+    justify-content: space-between; /* Membuat kolom input berada di satu baris */
+    gap: 10px; /* Spasi antar kolom input */
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    flex: 1; /* Membuat setiap input mengisi ruang yang tersedia */
+    min-width: 0; /* Menghindari overflow pada input */
+}
+
+.search-button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+.sektoral-results {
+    margin-top: 20px;
+}
+
+.sektoral-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sektoral-table th, .sektoral-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}

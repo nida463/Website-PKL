@@ -1,0 +1,69 @@
+/* Navigation Bar */
+.navbar {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8; /* Warna latar belakang navbar */
+  }
+  
+  .navbar-menu {
+    display: flex;
+    align-items: center; /* Untuk menyejajarkan logo dan item */
+  }
+  
+  .navbar-items {
+    display: flex;
+    gap: 20px; /* Jarak antara item navbar */
+  }
+  
+  .navbar-item {
+    text-decoration: none; /* Menghapus garis bawah dari tautan */
+    color: #333; /* Warna teks item */
+  }
+  
+  .navbar-item:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+  }
+  
+}
+
+/* Logo di kiri */
+.logo {
+  width: 49px;
+  height: 30px;
+  font-family: 'Epilogue', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #2D2D2D;
+  display: flex;
+  align-items: center;
+  /* Menambahkan margin kiri untuk jarak dari tepi kiri */
+  margin-left: 40px; /* Atur nilai sesuai kebutuhan */
+}
+
+/* Menu Items di kanan */
+.menu-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+  width: auto; /* Menyesuaikan lebar menu items secara otomatis */
+  height: 27px;
+}
+
+/* Link untuk setiap menu item */
+.menu-items a {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+}
+
+.menu-items a:hover {
+  color: #444444;
+}

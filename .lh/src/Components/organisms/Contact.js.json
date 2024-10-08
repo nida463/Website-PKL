@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/Components/organisms/Contact.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1727857845222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1727857845222,
+            "name": "Commit-0",
+            "content": "// src/Components/organisms/kontak/Kontak.js\nimport React from 'react';\nimport Lable from '../atoms/Lable';\nimport SosMed from '../molecules/contact/SosMed';\nimport ContactForm from '../molecules/contact/ContactForm';\nimport '../../styles/Contact.css';\nimport '../../styles/Header.css';\n\n\n\nconst Contact = () => {\n  return (\n    <section id=\"contact\">\n      <div className=\"contact-layout\">\n        <h2 className=\"title-conatct\">Let's work together</h2>\n        <div className=\"bar-container\">\n          <div className=\"bar-1\">\n            <Lable className=\"contact-left\">\n            This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com\n             This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com\n            </Lable>\n            <SosMed />\n          </div>\n          <ContactForm />\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport default Contact;"
+        }
+    ]
+}

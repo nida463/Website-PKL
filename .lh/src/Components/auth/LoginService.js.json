@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/Components/auth/LoginService.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1727938280296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1727938280296,
+            "name": "Commit-0",
+            "content": "// src/services/loginService.js\r\nimport axios from 'axios';\r\n\r\n// Fungsi login untuk memanggil API\r\nexport const login = async (nip, password) => {\r\n    try {\r\n        const response = await axios.post('http://116.206.212.234:4000/auth/login', {\r\n            nip: nip,\r\n            password: password\r\n        });\r\n\r\n        // Jika API mengembalikan token, simpan di localStorage\r\n        if (response.data.token) {\r\n            localStorage.setItem('token', response.data.token);\r\n            return response.data;\r\n        } else {\r\n            throw new Error('NIP atau password salah');\r\n        }\r\n    } catch (error) {\r\n        throw new Error('Terjadi kesalahan saat login');\r\n    }\r\n};"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+.description-atom {
+    margin: 0;
+  }
+  
+  .description-atom.large {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .description-atom.medium {
+    font-size: 18px;
+  }
+  
+  .description-atom.small {
+    font-size: 14px;
+    color: #6c757d;
+  }
+  

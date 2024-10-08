@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/Components/auth/Logout.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1727928496761,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1727928496761,
+            "name": "Commit-0",
+            "content": "import React from 'react';\r\n\r\nconst Logout = ({ handleLogout }) => {\r\n  return (\r\n    <button onClick={handleLogout}>Logout</button>\r\n  );\r\n};\r\n\r\nexport default Logout;\r\n"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/Components/atoms/navbar/NavbarItem.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1727856095950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1727940360470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react';\n \n const NavbarItem = ({ label, href }) => {\n   return (\n-    <li>\n+    <div>\n       <a href={href}>{label}</a>\n     </li>\n   );\n };\n"
+                },
+                {
+                    "date": 1727940366268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n const NavbarItem = ({ label, href }) => {\n   return (\n     <div>\n       <a href={href}>{label}</a>\n-    </li>\n+    </div>\n   );\n };\n \n export default NavbarItem;\n"
+                }
+            ],
+            "date": 1727856095950,
+            "name": "Commit-0",
+            "content": "// src/components/atoms/navbar/NavbarItem.js\nimport React from 'react';\n\nconst NavbarItem = ({ label, href }) => {\n  return (\n    <li>\n      <a href={href}>{label}</a>\n    </li>\n  );\n};\n\nexport default NavbarItem;\n"
+        }
+    ]
+}

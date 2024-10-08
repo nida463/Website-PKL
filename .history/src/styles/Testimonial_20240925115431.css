@@ -1,0 +1,79 @@
+/* Kontainer utama untuk section testimonial */
+.testimonial {
+    max-width: 1232px; /* Lebar maksimum */
+    margin: 0 auto; /* Pusatkan kontainer */
+    padding: 20px; /* Jarak di sekitar kontainer */
+  }
+  
+  /* Judul testimonial */
+  .testimonial-title {
+    font-size: 28px; /* Ukuran font judul */
+    text-align: center; /* Pusatkan teks */
+    margin-bottom: 40px; /* Jarak bawah judul */
+  }
+  
+  /* Konten testimonial, menggunakan grid untuk 3 kolom */
+  .testimonial-content {
+    display: grid; /* Gunakan grid untuk layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom dengan lebar sama */
+    gap: 24px; /* Jarak antar card */
+  }
+  
+  /* Setiap item testimonial */
+  .testimonial-item {
+    background: #f3f3f3; /* Warna latar belakang card */
+    border-radius: 8px; /* Radius sudut */
+    padding: 20px; /* Jarak dalam card */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+    display: flex; /* Flexbox untuk tata letak dalam item */
+    flex-direction: column; /* Atur elemen dalam kolom */
+  }
+  
+  /* Teks dalam testimonial */
+  .testimonial-text {
+    flex-grow: 1; /* Mengisi ruang yang tersisa */
+    margin-bottom: 20px; /* Jarak bawah untuk footer */
+  }
+  
+  /* Footer untuk gambar dan informasi */
+  .testimonial-footer {
+    display: flex; /* Flexbox untuk gambar dan keterangan */
+    align-items: center; /* Pusatkan vertikal */
+  }
+  
+  /* Gambar avatar */
+  .testimonial-avatar {
+    width: 50px; /* Ukuran gambar avatar */
+    height: 50px; /* Ukuran gambar avatar */
+    border-radius: 50%; /* Bulatkan gambar */
+    margin-right: 10px; /* Jarak kanan untuk gambar */
+  }
+  
+  /* Kontainer untuk keterangan */
+  .testimonial-keterangan {
+    display: flex; /* Flexbox untuk nama dan perusahaan */
+    flex-direction: column; /* Atur dalam kolom */
+  }
+  
+  /* Nama klien */
+  .nama {
+    font-weight: bold; /* Tebalkan nama */
+  }
+  
+  /* Nama perusahaan */
+  .company {
+    color: #777; /* Warna lebih terang untuk perusahaan */
+  }
+  
+  /* Bar bintang */
+  .testimonial-start {
+    display: flex; /* Flexbox untuk bintang */
+  }
+  
+  /* Gambar bintang */
+  .testimonial-star {
+    width: 20px; /* Ukuran bintang */
+    height: 20px; /* Ukuran bintang */
+    margin-right: 2px; /* Jarak antar bintang */
+  }
+  

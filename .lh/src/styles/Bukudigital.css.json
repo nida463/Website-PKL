@@ -1,0 +1,62 @@
+{
+    "sourceFile": "src/styles/Bukudigital.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 11,
+            "patches": [
+                {
+                    "date": 1728363169178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1728363510262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,23 +30,39 @@\n th, td {\r\n     border: 1px solid #ccc;\r\n     padding: 10px;\r\n     text-align: left;\r\n+    vertical-align: middle;\r\n }\r\n \r\n th {\r\n-    background-color: #f1f1f1;\r\n+    background-color: #4CAF50; /* Warna header lebih menonjol */\r\n+    color: white;\r\n+    font-weight: bold;\r\n+    text-align: center;\r\n+}\r\n+\r\n+td {\r\n+    background-color: #f9f9f9; /* Warna kolom data */\r\n     color: #333;\r\n }\r\n \r\n-tr:nth-child(even) {\r\n-    background-color: #f9f9f9;\r\n+tr:nth-child(even) td {\r\n+    background-color: #f1f1f1; /* Baris genap dengan warna lebih terang */\r\n }\r\n \r\n-tr:nth-child(odd) {\r\n-    background-color: #fff;\r\n+tr:hover td {\r\n+    background-color: #e0f7fa; /* Efek hover pada setiap baris */\r\n }\r\n \r\n+th:first-child, td:first-child {\r\n+    width: 50%; /* Lebar kolom Judul Buku lebih besar */\r\n+}\r\n+\r\n+th:last-child, td:last-child {\r\n+    text-align: center;\r\n+}\r\n+\r\n .detail-button {\r\n     padding: 8px 12px;\r\n     border: none;\r\n     border-radius: 4px;\r\n"
+                },
+                {
+                    "date": 1728363530427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     vertical-align: middle;\r\n }\r\n \r\n th {\r\n-    background-color: #4CAF50; /* Warna header lebih menonjol */\r\n+    background-color: #4cacaf; /* Warna header lebih menonjol */\r\n     color: white;\r\n     font-weight: bold;\r\n     text-align: center;\r\n }\r\n"
+                },
+                {
+                    "date": 1728363537650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     vertical-align: middle;\r\n }\r\n \r\n th {\r\n-    background-color: #4cacaf; /* Warna header lebih menonjol */\r\n+    background-color: #37cacf; /* Warna header lebih menonjol */\r\n     color: white;\r\n     font-weight: bold;\r\n     text-align: center;\r\n }\r\n"
+                },
+                {
+                    "date": 1728363577030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     vertical-align: middle;\r\n }\r\n \r\n th {\r\n-    background-color: #37cacf; /* Warna header lebih menonjol */\r\n+    background-color: #3774cf; /* Warna header lebih menonjol */\r\n     color: white;\r\n     font-weight: bold;\r\n     text-align: center;\r\n }\r\n"
+                },
+                {
+                    "date": 1728363587017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     vertical-align: middle;\r\n }\r\n \r\n th {\r\n-    background-color: #3774cf; /* Warna header lebih menonjol */\r\n+    background-color: #5297ff; /* Warna header lebih menonjol */\r\n     color: white;\r\n     font-weight: bold;\r\n     text-align: center;\r\n }\r\n"
+                },
+                {
+                    "date": 1728363611683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     vertical-align: middle;\r\n }\r\n \r\n th {\r\n-    background-color: #5297ff; /* Warna header lebih menonjol */\r\n+    background-color: #a6c5f5; /* Warna header lebih menonjol */\r\n     color: white;\r\n     font-weight: bold;\r\n     text-align: center;\r\n }\r\n"
+                },
+                {
+                    "date": 1728363622135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     vertical-align: middle;\r\n }\r\n \r\n th {\r\n-    background-color: #a6c5f5; /* Warna header lebih menonjol */\r\n+    background-color: #a6bff5; /* Warna header lebih menonjol */\r\n     color: white;\r\n     font-weight: bold;\r\n     text-align: center;\r\n }\r\n"
+                },
+                {
+                    "date": 1728363645341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     vertical-align: middle;\r\n }\r\n \r\n th {\r\n-    background-color: #a6bff5; /* Warna header lebih menonjol */\r\n+    background-color: #91b1f7; /* Warna header lebih menonjol */\r\n     color: white;\r\n     font-weight: bold;\r\n     text-align: center;\r\n }\r\n"
+                },
+                {
+                    "date": 1728363713499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     vertical-align: middle;\r\n }\r\n \r\n th {\r\n-    background-color: #91b1f7; /* Warna header lebih menonjol */\r\n+    background-color: #93aee9; /* Warna header lebih menonjol */\r\n     color: white;\r\n     font-weight: bold;\r\n     text-align: center;\r\n }\r\n"
+                },
+                {
+                    "date": 1728363735466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     vertical-align: middle;\r\n }\r\n \r\n th {\r\n-    background-color: #93aee9; /* Warna header lebih menonjol */\r\n+    background-color: #719dfc; /* Warna header lebih menonjol */\r\n     color: white;\r\n     font-weight: bold;\r\n     text-align: center;\r\n }\r\n"
+                },
+                {
+                    "date": 1728373176640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,87 @@\n+/* styles/bukudigital.css */\r\n+\r\n+.sektoral-container {\r\n+    width: 100%;\r\n+    max-width: 800px;\r\n+    margin: auto;\r\n+    padding: 20px;\r\n+    border: 1px solid #ccc;\r\n+    border-radius: 8px;\r\n+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);\r\n+    background-color: #f9f9f9;\r\n+}\r\n+\r\n+.sektoral-title {\r\n+    text-align: center;\r\n+    margin-bottom: 20px;\r\n+    color: #333;\r\n+}\r\n+\r\n+.result-table {\r\n+    margin-top: 20px;\r\n+}\r\n+\r\n+table {\r\n+    width: 100%;\r\n+    border-collapse: collapse;\r\n+    margin-bottom: 20px;\r\n+}\r\n+\r\n+th, td {\r\n+    border: 1px solid #ccc;\r\n+    padding: 10px;\r\n+    text-align: left;\r\n+    vertical-align: middle;\r\n+}\r\n+\r\n+th {\r\n+    background-color: #93aee9; /* Warna header lebih menonjol */\r\n+    color: white;\r\n+    font-weight: bold;\r\n+    text-align: center;\r\n+}\r\n+\r\n+td {\r\n+    background-color: #f9f9f9; /* Warna kolom data */\r\n+    color: #333;\r\n+}\r\n+\r\n+tr:nth-child(even) td {\r\n+    background-color: #f1f1f1; /* Baris genap dengan warna lebih terang */\r\n+}\r\n+\r\n+tr:hover td {\r\n+    background-color: #e0f7fa; /* Efek hover pada setiap baris */\r\n+}\r\n+\r\n+th:first-child, td:first-child {\r\n+    width: 50%; /* Lebar kolom Judul Buku lebih besar */\r\n+}\r\n+\r\n+th:last-child, td:last-child {\r\n+    text-align: center;\r\n+}\r\n+\r\n+.detail-button {\r\n+    padding: 8px 12px;\r\n+    border: none;\r\n+    border-radius: 4px;\r\n+    background-color: #007BFF;\r\n+    color: white;\r\n+    font-size: 14px;\r\n+    cursor: pointer;\r\n+    transition: background-color 0.3s ease;\r\n+}\r\n+\r\n+.detail-button:hover {\r\n+    background-color: #0056b3;\r\n+}\r\n+\r\n+.pdf-preview {\r\n+    margin-top: 20px;\r\n+}\r\n+\r\n+.error-message {\r\n+    color: red;\r\n+    font-weight: bold;\r\n+}\r\n"
+                }
+            ],
+            "date": 1728363169178,
+            "name": "Commit-0",
+            "content": "/* styles/bukudigital.css */\r\n\r\n.sektoral-container {\r\n    width: 100%;\r\n    max-width: 800px;\r\n    margin: auto;\r\n    padding: 20px;\r\n    border: 1px solid #ccc;\r\n    border-radius: 8px;\r\n    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);\r\n    background-color: #f9f9f9;\r\n}\r\n\r\n.sektoral-title {\r\n    text-align: center;\r\n    margin-bottom: 20px;\r\n    color: #333;\r\n}\r\n\r\n.result-table {\r\n    margin-top: 20px;\r\n}\r\n\r\ntable {\r\n    width: 100%;\r\n    border-collapse: collapse;\r\n    margin-bottom: 20px;\r\n}\r\n\r\nth, td {\r\n    border: 1px solid #ccc;\r\n    padding: 10px;\r\n    text-align: left;\r\n}\r\n\r\nth {\r\n    background-color: #f1f1f1;\r\n    color: #333;\r\n}\r\n\r\ntr:nth-child(even) {\r\n    background-color: #f9f9f9;\r\n}\r\n\r\ntr:nth-child(odd) {\r\n    background-color: #fff;\r\n}\r\n\r\n.detail-button {\r\n    padding: 8px 12px;\r\n    border: none;\r\n    border-radius: 4px;\r\n    background-color: #007BFF;\r\n    color: white;\r\n    font-size: 14px;\r\n    cursor: pointer;\r\n    transition: background-color 0.3s ease;\r\n}\r\n\r\n.detail-button:hover {\r\n    background-color: #0056b3;\r\n}\r\n\r\n.pdf-preview {\r\n    margin-top: 20px;\r\n}\r\n\r\n.error-message {\r\n    color: red;\r\n    font-weight: bold;\r\n}\r\n"
+        }
+    ]
+}

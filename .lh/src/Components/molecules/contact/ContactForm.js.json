@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/Components/molecules/contact/ContactForm.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1727859140503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1727859147420,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n // src/components/molecules/kontak/ContactForm.js\n import React from \"react\";\n import InputField from \"../../atoms/InputField\";\n-import Button from \"../../atoms/header/Button\";\n+import Button from \"../../atoms/Button\";\n import \"../../../styles/Header.css\"; // Mengimpor CSS dari Header\n \n const ContactForm = () => {\n   return (\n"
+                }
+            ],
+            "date": 1727859140503,
+            "name": "Commit-0",
+            "content": "// src/components/molecules/kontak/ContactForm.js\nimport React from \"react\";\nimport InputField from \"../../atoms/InputField\";\nimport Button from \"../../atoms/header/Button\";\nimport \"../../../styles/Header.css\"; // Mengimpor CSS dari Header\n\nconst ContactForm = () => {\n  return (\n    <div className=\"baris-2\">\n      <InputField type=\"text\" placeholder=\"Name\" className=\"input-field\" />\n      <InputField type=\"email\" placeholder=\"Email\" className=\"input-field\" />\n      <Button >Submit</Button>\n    </div>\n  );\n};\n\nexport default ContactForm;\n"
+        }
+    ]
+}

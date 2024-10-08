@@ -1,0 +1,71 @@
+/* Organisms CSS */
+
+/* Navbar Section */
+.navbar-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Header Section */
+  .header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .header {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styles for Header Content */
+  .header-content {
+    margin-bottom: 20px;
+  }
+  
+  .title-subtitle p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .visual-designer h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2D2D2D;
+  }
+  
+  .additional-content p {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  /* Button Styles */
+  .header-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .header-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Image Styles */
+  .header-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  

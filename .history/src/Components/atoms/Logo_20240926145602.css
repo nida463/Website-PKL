@@ -1,0 +1,21 @@
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2D2D2D;
+    margin-left: 40px; /* Jarak logo dari sisi kiri navbar */
+    width: 49px; /* Lebar logo */
+    height: 30px; /* Tinggi logo */
+  }
+  
+  .logo img {
+    width: 116.07px; /* Ukuran gambar logo */
+    height: 38.21px;
+    object-fit: contain; /* Mempertahankan rasio aspek gambar */
+  }
+  

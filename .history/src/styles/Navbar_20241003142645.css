@@ -1,0 +1,85 @@
+:root {
+  --navbar-color: #FFFFFF; 
+  --logo-font-family: "Epilogue", sans-serif;
+  --logo-font-size: 20px; 
+  --logo-font-weight: 600; 
+  --logo-line-height: 30px; 
+  --menu-font-family: "Epilogue", sans-serif; 
+  --menu-font-size: 17px; 
+  --menu-font-weight: 400; 
+  --menu-line-height: 27px; 
+}
+
+.navbar {
+  display: flex;
+  width: 100%; 
+  height: 78px; 
+  justify-content: space-between; 
+  align-items: center; 
+  background-color: var(--navbar-color); 
+  position: fixed !important;
+  top: 0;
+  left: 0; 
+  right: 0; 
+  z-index: 999; 
+  box-shadow: 0 2px 10px rgba(255, 254, 254, 0.1); 
+}
+
+/* Styling untuk brand dan menu */
+.navbar-brand {
+  display: flex; /* Pastikan logo berada dalam flex container */
+  align-items: center; /* Penyelarasan vertikal */
+  text-decoration: none; /* Menghapus garis bawah */
+  list-style: none; /* Menghapus tanda titik */
+}
+
+.navbar-brand a {
+  font-family: var(--logo-font-family);
+  font-size: var(--logo-font-size);
+  font-weight: var(--logo-font-weight);
+  line-height: var(--logo-line-height);
+  text-align: left;
+  color: #2D2D2D; /* Mengubah warna logo sesuai ketentuan */
+  text-decoration: none;
+  margin-left: 10px;
+  padding: 42px 24px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  g
+}
+
+.navbar-menu li {
+  margin-left: 20px; 
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: #333; 
+  font-family: var(--menu-font-family);
+  font-size: var(--menu-font-size); 
+  font-weight: var(--menu-font-weight); 
+  line-height: var(--menu-line-height); 
+  text-align: left; 
+}
+
+.navbar-menu li:last-child {
+  margin-right: 20px; 
+}
+
+.navbar-logo {
+  width: 49px; /* Menambahkan ukuran lebar */
+  height: 30px; /* Menambahkan ukuran tinggi */
+  font-family: var(--logo-font-family);
+  font-size: var(--logo-font-size);
+  font-weight: var(--logo-font-weight);
+  line-height: var(--logo-line-height);
+  color: #2D2D2D; /* Mengubah warna logo sesuai ketentuan */
+  display: flex;
+  align-items: center; /* Menyelaraskan logo secara vertikal */
+  margin-left: 20px;
+}

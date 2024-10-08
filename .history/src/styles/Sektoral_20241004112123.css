@@ -1,0 +1,91 @@
+/* Gaya Umum untuk Kontainer */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Mengatur tinggi kontainer agar memanjang */
+    background-color: #f4f4f4; /* Warna latar belakang */
+    font-family: 'Arial', sans-serif; /* Menggunakan font yang lebih baik */
+  }
+  
+  /* Gaya untuk Box */
+  .login-box {
+    background-color: #fff; /* Warna latar belakang putih untuk box */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    width: 400px; /* Lebar box */
+  }
+  
+  /* Gaya Judul */
+  .login-title {
+    text-align: center;
+    color: #333; /* Warna teks judul */
+    margin-bottom: 20px;
+  }
+  
+  /* Gaya Formulir */
+  .login-form {
+    display: flex;
+    flex-wrap: wrap; /* Membungkus elemen dalam form */
+    justify-content: space-between; /* Memberi jarak antar elemen */
+  }
+  
+  /* Gaya Input dan Select */
+  .login-input {
+    width: 48%; /* Lebar setiap elemen input */
+    padding: 10px;
+    margin-bottom: 10px; /* Margin bawah untuk spasi */
+    border: 1px solid #ccc; /* Batas abu-abu */
+    border-radius: 5px; /* Sudut melengkung */
+  }
+  
+  /* Gaya Tombol */
+  .login-button {
+    width: 100%; /* Lebar tombol penuh */
+    padding: 10px;
+    background-color: #007bff; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Tidak ada batas */
+    border-radius: 5px; /* Sudut melengkung */
+    cursor: pointer; /* Mengubah kursor saat hover */
+    font-weight: bold; /* Mengatur ketebalan font */
+  }
+  
+  /* Gaya Tabel Hasil Pencarian */
+  .sektoral-results {
+    margin-top: 20px; /* Margin atas untuk spasi */
+  }
+  
+  .sektoral-table {
+    width: 100%; /* Lebar tabel penuh */
+    border-collapse: collapse; /* Menghilangkan jarak antar sel */
+  }
+  
+  .sektoral-table th, .sektoral-table td {
+    border: 1px solid #ddd; /* Batas abu-abu pada sel */
+    padding: 8px; /* Padding dalam sel */
+    text-align: left; /* Rata kiri teks */
+  }
+  
+  .sektoral-table th {
+    background-color: #f2f2f2; /* Warna latar belakang header tabel */
+    color: #333; /* Warna teks header tabel */
+    font-weight: bold; /* Ketebalan font header */
+  }
+  
+  .sektoral-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Warna latar belakang baris genap */
+  }
+  
+  .sektoral-table tr:hover {
+    background-color: #e0f7fa; /* Warna latar belakang saat hover */
+  }
+  
+  /* Gaya Loading dan Error */
+  p {
+    color: #d9534f; /* Warna merah untuk pesan error */
+    text-align: center; /* Rata tengah */
+    margin-top: 10px; /* Margin atas untuk spasi */
+  }
+  

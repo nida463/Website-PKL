@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/Components/organisms/Header.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1727857946581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1727857961723,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-[15.27, 2/10/2024] Satria Nur Ramadan Rpl: import React from \"react\";\n+import React from \"react\";\n import BrandingSection from \"../molecules/header/BrandingSection\";\n import BodyTextH from \"../molecules/header/BodyTextH\";\n import ButonContact from \"../molecules/header/ButonContact\";\n import Image from \"../atoms/Image\";\n"
+                },
+                {
+                    "date": 1727857974218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,21 +20,4 @@\n   );\n };\n \n export default HeaderContent;\n-[15.27, 2/10/2024] Satria Nur Ramadan Rpl: import React from \"react\";\n-import \"../../styles/Logo.css\"; // Path ke CSS di styles\n-import LogoItem from \"../molecules/logo/LogoItem\";\n-\n-const LogoSection = () => {\n-  return (\n-    <div className=\"logo-section\">\n-      <LogoItem src=\"/img/logo/Google.png\" alt=\"Google Logo\" />\n-      <LogoItem src=\"/img/logo/Nike.png\" alt=\"Nike Logo\" />\n-      <LogoItem src=\"/img/logo/Samsung.png\" alt=\"Samsung Logo\" />\n-      <LogoItem src=\"/img/logo/Apple.png\" alt=\"Apple Logo\" />\n-      <LogoItem src=\"/img/logo/Adidas.png\" alt=\"Adidas Logo\" />\n-    </div>\n-  );\n-};\n-\n-export default LogoSection;\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1727857946581,
+            "name": "Commit-0",
+            "content": "[15.27, 2/10/2024] Satria Nur Ramadan Rpl: import React from \"react\";\nimport BrandingSection from \"../molecules/header/BrandingSection\";\nimport BodyTextH from \"../molecules/header/BodyTextH\";\nimport ButonContact from \"../molecules/header/ButonContact\";\nimport Image from \"../atoms/Image\";\nimport \"../../styles/Header.css\"; \n\nconst HeaderContent = () => {\n  return (\n    <div className=\"layout\">\n      <div className=\"text-section\">\n        <BrandingSection />\n        <BodyTextH/>\n        <ButonContact />\n      </div>\n      <div className=\"image-section\">\n        <Image src=\"/img/header/Header.png\" alt=\"Visual\" />\n      </div>\n    </div>\n  );\n};\n\nexport default HeaderContent;\n[15.27, 2/10/2024] Satria Nur Ramadan Rpl: import React from \"react\";\nimport \"../../styles/Logo.css\"; // Path ke CSS di styles\nimport LogoItem from \"../molecules/logo/LogoItem\";\n\nconst LogoSection = () => {\n  return (\n    <div className=\"logo-section\">\n      <LogoItem src=\"/img/logo/Google.png\" alt=\"Google Logo\" />\n      <LogoItem src=\"/img/logo/Nike.png\" alt=\"Nike Logo\" />\n      <LogoItem src=\"/img/logo/Samsung.png\" alt=\"Samsung Logo\" />\n      <LogoItem src=\"/img/logo/Apple.png\" alt=\"Apple Logo\" />\n      <LogoItem src=\"/img/logo/Adidas.png\" alt=\"Adidas Logo\" />\n    </div>\n  );\n};\n\nexport default LogoSection;"
+        }
+    ]
+}

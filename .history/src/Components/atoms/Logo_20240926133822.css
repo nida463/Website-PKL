@@ -1,0 +1,15 @@
+/* Logo.css */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 0; /* No padding inside the logo */
+}
+
+.logo img {
+    width: 116.07px;
+    height: 38.21px;
+    object-fit: contain; /* Maintain aspect ratio */
+}

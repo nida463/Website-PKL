@@ -1,0 +1,95 @@
+/* Container untuk Gallery */
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 32px; 
+    width: 100%;
+}
+
+/* Latest work */
+.latest-work {
+    width: 191px;
+    height: 42px;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    color: #2D2D2D;
+}
+
+/* Gallery Section */
+.gallery-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 1232px;
+    height: auto;
+}
+
+/* Gallery Card */
+.gallery-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 394.67px;
+    height: 419px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+/* Gallery Image */
+.gallery-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Title & Description */
+.gallery-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 394.67px;
+    height: 65px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+/* Project Title */
+.gallery-text h3 {
+    width: 394.67px;
+    height: 30px;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2D2D2D;
+}
+
+/* Subtitle */
+.gallery-text p {
+    width: 394.67px;
+    height: 27px;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    color: #2D2D2D;
+}

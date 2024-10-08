@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/Components/molecules/header/BodyTextH.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1727859238963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1727859238963,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\nimport Lable from \"../../atoms/Lable\";\n\nconst BodyTextH = () => {\n  return (\n    <Lable className=\"description\">\n      This is a template Figma file, turned into code using Anima. Learn more at\n      AnimaApp.com\n    </Lable>\n  );\n};\n\nexport default BodyTextH;\n"
+        }
+    ]
+}

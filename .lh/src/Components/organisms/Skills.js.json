@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/Components/organisms/Skills.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1727858080432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1727858080432,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\nimport SkillCard from \"../molecules/skills/SkillCard\";\nimport \"../../styles/Skills.css\";\n\nconst Skills = () => {\n  return (\n    <section id=\"Skills\">\n      <div className=\"skills\">\n        <div className=\"skills-content\">\n          <SkillCard\n            src=\"/img/skills/Product-Design.png\"\n            alt=\"Product Design\"\n            title=\"Product Design\"\n            description=\"This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com\"\n          />\n          <SkillCard\n            src=\"/img/skills/Visual-Design.png\"\n            alt=\"Visual Design\"\n            title=\"Visual Design\"\n            description=\"This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com\"\n          />\n          <SkillCard\n            src=\"/img/skills/Art-Direction.png\"\n            alt=\"Art Direction\"\n            title=\"Art Direction\"\n            description=\"This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com\"\n          />\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport default Skills;"
+        }
+    ]
+}

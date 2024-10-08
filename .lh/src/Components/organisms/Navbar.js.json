@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/Components/organisms/Navbar.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1727858000060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1727858000060,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\nimport NavbarMenu from \"../molecules/navbar/NavbarMenu\"; \nimport \"../../styles/Navbar.css\"; \n\nconst Navbar = () => {\n  return (\n    <nav className=\"navbar\">\n      <div className=\"navbar-brand\">\n      </div>\n      <NavbarMenu />\n    </nav>\n  );\n};\n\nexport default Navbar;"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 42px;
+  gap: 24px;
+  width: 1280px;
+  height: 78px;
+  background: #FFFFFF;
+}
+
+/* Logo di kiri */
+.logo {
+  width: 49px;
+  height: 30px;
+  font-family: 'Epilogue', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #2D2D2D;
+  display: flex;
+  align-items: center;
+  /* Menambahkan margin kiri untuk jarak dari tepi kiri */
+  margin-left: 40px; /* Atur nilai sesuai kebutuhan */
+}
+
+/* Menu Items di kanan */
+.menu-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+  width: auto; /* Menyesuaikan lebar menu items secara otomatis */
+  height: 27px;
+}
+
+/* Link untuk setiap menu item */
+.menu-items a {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+}
+
+.menu-items a:hover {
+  color: #444444;
+}

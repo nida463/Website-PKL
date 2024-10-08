@@ -1,0 +1,44 @@
+/* Button.css */
+
+/* Gaya umum untuk semua tombol */
+.button-atom {
+  display: flex;                     /* Menggunakan flexbox untuk tata letak */
+  flex-direction: row;              /* Mengatur arah flex menjadi baris */
+  justify-content: center;           /* Pusatkan konten secara horizontal */
+  align-items: center;               /* Pusatkan konten secara vertikal */
+  padding: 24px 64px;               /* Spacing dalam tombol */
+  gap: 10px;                        /* Jarak antar elemen dalam tombol */
+  border: none;                     /* Hapus border default */
+  border-radius: 4px;              /* Rounded corners */
+  font-family: 'Epilogue', sans-serif; /* Menggunakan font yang sesuai */
+  cursor: pointer;                  /* Pointer cursor saat hover */
+  transition: background-color 0.3s ease; /* Animasi transisi */
+}
+
+/* Varian untuk Header Button */
+.button-atom.header {
+  width: 211px;                      /* Lebar tombol header */
+  height: 78px;                      /* Tinggi tombol header */
+  background-color: #2D2D2D;        /* Warna latar belakang tombol */
+  color: #FFFFFF;                   /* Warna teks tombol */
+  font-size: 20px;                  /* Ukuran font tombol */
+  font-weight: 600;                 /* Ketebalan font tombol */
+  text-align: center;               /* Rata tengah teks */
+}
+
+.button-atom.header:hover {
+  background-color: #1a1a1a;        /* Warna latar belakang saat hover */
+}
+
+/* Varian untuk Contact Button */
+.button-atom.contact {
+  width: 199px;                     /* Lebar tombol kontak */
+  height: 78px;                     /* Tinggi tombol kontak */
+  background: #2D2D2D;              /* Warna latar belakang tombol */
+  color: #FFFFFF;                   /* Warna teks tombol */
+  font-size: 17px;                  /* Ukuran font tombol */
+}
+
+.button-atom.contact:hover {
+  background: #1a1a1a;              /* Warna latar belakang saat hover */
+}

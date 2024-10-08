@@ -1,0 +1,75 @@
+/* Text and Description Atom Styling */
+
+/* Umum untuk semua teks di website */
+.text-atom {
+    font-family: 'Epilogue', sans-serif; /* Font yang digunakan untuk semua teks */
+    color: #2D2D2D;                      /* Warna dasar untuk semua teks */
+}
+
+/* Gaya untuk Header */
+.header-text {
+    font-weight: 600;                    /* Ketebalan font untuk header */
+    font-size: 32px;                     /* Ukuran font untuk header */
+    margin: 0;                           /* Menghapus margin untuk keselarasan */
+}
+
+/* Gaya untuk Subheader atau Subtitle */
+.subtitle-text {
+    font-weight: 400;                    /* Ketebalan font untuk subheader */
+    font-size: 20px;                     /* Ukuran font untuk subheader */
+    color: #444444;                      /* Warna subheader yang sedikit lebih terang */
+}
+
+/* Gaya untuk Konten Tambahan */
+.additional-content {
+    font-weight: 400;                    /* Ketebalan font untuk konten tambahan */
+    font-size: 17px;                     /* Ukuran font untuk konten tambahan */
+    line-height: 1.5;                   /* Jarak antar baris untuk keterbacaan */
+}
+
+/* Gaya untuk Teks dalam Skill Section */
+.skills-title {
+    font-weight: 600;                    /* Ketebalan font untuk judul skill */
+    font-size: 24px;                     /* Ukuran font untuk judul skill */
+}
+
+.skills-subtitle {
+    font-weight: 400;                    /* Ketebalan font untuk subtitle skill */
+    font-size: 16px;                     /* Ukuran font untuk subtitle skill */
+}
+
+/* Gaya untuk Teks dalam Galeri */
+.gallery-title {
+    font-weight: 600;                    /* Ketebalan font untuk judul galeri */
+    font-size: 20px;                     /* Ukuran font untuk judul galeri */
+}
+
+.gallery-description {
+    font-weight: 400;                    /* Ketebalan font untuk deskripsi galeri */
+    font-size: 17px;                     /* Ukuran font untuk deskripsi galeri */
+}
+
+/* Gaya untuk Testimonial */
+.testimonial-title {
+    font-size: 28px;                     /* Ukuran font untuk judul testimonial */
+    font-weight: 700;                    /* Ketebalan font untuk judul testimonial */
+    text-align: center;                  /* Rata tengah untuk judul testimonial */
+}
+
+.testimonial-text {
+    font-size: 16px;                     /* Ukuran font untuk teks testimonial */
+    font-weight: 400;                    /* Ketebalan font untuk teks testimonial */
+    line-height: 1.5;                   /* Jarak antar baris untuk keterbacaan */
+}
+
+/* Gaya untuk Kontak */
+.contact-title {
+    font-weight: 600;                    /* Ketebalan font untuk judul kontak */
+    font-size: 32px;                     /* Ukuran font untuk judul kontak */
+}
+
+.contact-description {
+    font-weight: 400;                    /* Ketebalan font untuk deskripsi kontak */
+    font-size: 17px;                     /* Ukuran font untuk deskripsi kontak */
+    line-height: 1.5;                   /* Jarak antar baris untuk keterbacaan */
+}

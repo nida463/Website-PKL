@@ -1,0 +1,11 @@
+/* MenuItems.css */
+.menu-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+    width: auto; /* Menyesuaikan lebar menu items secara otomatis */
+    height: 27px;
+  }
+  

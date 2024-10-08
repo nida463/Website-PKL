@@ -1,0 +1,18 @@
+/* src/Components/atoms/Image.css */
+.image-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-section img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-section img:hover {
+    transform: scale(1.05);
+  }
+  

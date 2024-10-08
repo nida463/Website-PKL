@@ -1,0 +1,15 @@
+import React from 'react';
+import Logo from '../atoms/navbar/Logo';
+import Navbaritem from '../molecules/navbar/Navbaritem';
+import './Navbar.css'; // Mengimpor file CSS untuk Navbar
+
+const Navbar = () => {
+  return (
+    <nav className="navbar">
+      <Logo />
+      <Navbaritem />
+    </nav>
+  );
+};
+
+export default Navbar;

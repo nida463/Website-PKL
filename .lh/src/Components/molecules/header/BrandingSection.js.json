@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/Components/molecules/header/BrandingSection.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1727859247477,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1727859247477,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\nimport Lable from \"../../atoms/Lable\";\n\nconst BrandingSection = () => {\n  return (\n    <div className=\"branding-section\">\n      <Lable className=\"brand\">Branding | Image making</Lable>\n      <Lable className=\"visual\">Visual Designer</Lable>\n    </div>\n  );\n};\n\nexport default BrandingSection;\n"
+        }
+    ]
+}

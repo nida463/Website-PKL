@@ -1,0 +1,38 @@
+{
+    "sourceFile": "src/Components/molecules/testimoni/TestimoniFooter.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1727859406321,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1727859413341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react';\n import TestiBodyText from './TestiBodyTeks';\n-import Avatar from \"../../atoms/testimoni\";\n+import Avatar from \"../../atoms/testimoni/I\";\n import Star from \"../../atoms/testimoni/StarRating\";\n \n \n const TestimoniFooter = ({ avatarSrc, avatarAlt, nama, company }) => {\n"
+                },
+                {
+                    "date": 1727859419658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react';\n import TestiBodyText from './TestiBodyTeks';\n-import Avatar from \"../../atoms/testimoni/I\";\n+import Avatar from \"../../atoms/testimoni/i\";\n import Star from \"../../atoms/testimoni/StarRating\";\n \n \n const TestimoniFooter = ({ avatarSrc, avatarAlt, nama, company }) => {\n"
+                },
+                {
+                    "date": 1727859426596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react';\n import TestiBodyText from './TestiBodyTeks';\n-import Avatar from \"../../atoms/testimoni/i\";\n+import Avatar from \"../../atoms/Image\";\n import Star from \"../../atoms/testimoni/StarRating\";\n \n \n const TestimoniFooter = ({ avatarSrc, avatarAlt, nama, company }) => {\n"
+                },
+                {
+                    "date": 1727859434108,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from 'react';\n import TestiBodyText from './TestiBodyTeks';\n import Avatar from \"../../atoms/Image\";\n-import Star from \"../../atoms/testimoni/StarRating\";\n+import Star from \"../../atoms/i\";\n \n \n const TestimoniFooter = ({ avatarSrc, avatarAlt, nama, company }) => {\n   return (\n"
+                },
+                {
+                    "date": 1727859439276,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from 'react';\n import TestiBodyText from './TestiBodyTeks';\n import Avatar from \"../../atoms/Image\";\n-import Star from \"../../atoms/i\";\n+import Star from \"../../atoms/Image\";\n \n \n const TestimoniFooter = ({ avatarSrc, avatarAlt, nama, company }) => {\n   return (\n"
+                }
+            ],
+            "date": 1727859406321,
+            "name": "Commit-0",
+            "content": "import React from 'react';\nimport TestiBodyText from './TestiBodyTeks';\nimport Avatar from \"../../atoms/testimoni\";\nimport Star from \"../../atoms/testimoni/StarRating\";\n\n\nconst TestimoniFooter = ({ avatarSrc, avatarAlt, nama, company }) => {\n  return (\n    <div className=\"testimoni-footer\">\n      <Avatar src={avatarSrc} alt={avatarAlt} />\n      <div className=\"testimoni-detile\">\n        <div className=\"testimoni-start\">\n          <Star src=\"/img/testimoni/Star.png\" alt=\"Star\" />\n          <Star src=\"/img/testimoni/Star.png\" alt=\"Star\" />\n          <Star src=\"/img/testimoni/Star.png\" alt=\"Star\" />\n          <Star src=\"/img/testimoni/Star.png\" alt=\"Star\" />\n          <Star src=\"/img/testimoni/Star.png\" alt=\"Star\" />\n        </div>\n        <TestiBodyText nama={nama} company={company} />\n      </div>\n    </div>\n  );\n};\n\nexport default TestimoniFooter;\n"
+        }
+    ]
+}

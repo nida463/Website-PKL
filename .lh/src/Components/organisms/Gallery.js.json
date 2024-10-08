@@ -1,0 +1,42 @@
+{
+    "sourceFile": "src/Components/organisms/Gallery.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1727857884783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1727858457820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n         <div className=\"gallery-content\">\n           {[...Array(6)].map((_, index) => (\n             <GalleryItem\n               key={index}\n-              src={/img/gallery/Image (${index + 1}).png}\n+              src={/img/gallery/Image (${index + 1}).png``}\n               alt={Gallery Item ${index + 1}}\n               title=\"Project title\"\n               description=\"UI, Art direction\"\n             />\n"
+                },
+                {
+                    "date": 1727858468874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n         <div className=\"gallery-content\">\n           {[...Array(6)].map((_, index) => (\n             <GalleryItem\n               key={index}\n-              src={/img/gallery/Image (${index + 1}).png``}\n+              src={`/img/gallery/Image (${index + 1}).png}\n               alt={Gallery Item ${index + 1}}\n               title=\"Project title\"\n               description=\"UI, Art direction\"\n             />\n"
+                },
+                {
+                    "date": 1727858483302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,10 +13,10 @@\n         <div className=\"gallery-content\">\n           {[...Array(6)].map((_, index) => (\n             <GalleryItem\n               key={index}\n-              src={`/img/gallery/Image (${index + 1}).png}\n-              alt={Gallery Item ${index + 1}}\n+              src={`/img/gallery/Image (${index + 1}).png`}\n+              alt={`Gallery Item ${index + 1}}\n               title=\"Project title\"\n               description=\"UI, Art direction\"\n             />\n           ))}\n"
+                },
+                {
+                    "date": 1727859493386,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n // src/components/organisms/Gallery.js\n import React, { useState } from \"react\";\n-import Title from \"../atoms/Title\";\n+import Tittle from \"../atoms/Title\";\n import GalleryItem from \"../molecules/gallery/GalleryItem\";\n import \"../../styles/Gallery.css\";\n \n const Gallery = () => {\n@@ -14,9 +14,9 @@\n           {[...Array(6)].map((_, index) => (\n             <GalleryItem\n               key={index}\n               src={`/img/gallery/Image (${index + 1}).png`}\n-              alt={`Gallery Item ${index + 1}}\n+              alt={`Gallery Item ${index + 1}`}\n               title=\"Project title\"\n               description=\"UI, Art direction\"\n             />\n           ))}\n"
+                },
+                {
+                    "date": 1727859498815,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n // src/components/organisms/Gallery.js\n import React, { useState } from \"react\";\n-import Tittle from \"../atoms/Title\";\n+import Tittle from \"../atoms/Tittle\";\n import GalleryItem from \"../molecules/gallery/GalleryItem\";\n import \"../../styles/Gallery.css\";\n \n const Gallery = () => {\n"
+                },
+                {
+                    "date": 1727859507369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n // src/components/organisms/Gallery.js\n import React, { useState } from \"react\";\n-import Tittle from \"../atoms/Tittle\";\n+import Title from \"../atoms/Tittle\";\n import GalleryItem from \"../molecules/gallery/GalleryItem\";\n import \"../../styles/Gallery.css\";\n \n const Gallery = () => {\n"
+                }
+            ],
+            "date": 1727857884783,
+            "name": "Commit-0",
+            "content": "// src/components/organisms/Gallery.js\nimport React, { useState } from \"react\";\nimport Title from \"../atoms/Title\";\nimport GalleryItem from \"../molecules/gallery/GalleryItem\";\nimport \"../../styles/Gallery.css\";\n\nconst Gallery = () => {\n\n  return (\n    <section id=\"Gallery\">\n      <div className=\"gallery\">\n        <Title title=\"Latest work\" />\n        <div className=\"gallery-content\">\n          {[...Array(6)].map((_, index) => (\n            <GalleryItem\n              key={index}\n              src={/img/gallery/Image (${index + 1}).png}\n              alt={Gallery Item ${index + 1}}\n              title=\"Project title\"\n              description=\"UI, Art direction\"\n            />\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport default Gallery;"
+        }
+    ]
+}

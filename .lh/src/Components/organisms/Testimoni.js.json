@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/Components/organisms/Testimoni.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1727858113797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1727859531661,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react';\n-import TestimoniTitle from '../atoms/Title';\n+import TestimoniTitle from '../atoms/Tittle';\n import TestimoniText from '../atoms/Lable';\n import TestimoniFooter from '../molecules/testimoni/TestimoniFooter'; \n import  '../../styles/Testimoni.css'; \n \n"
+                }
+            ],
+            "date": 1727858113797,
+            "name": "Commit-0",
+            "content": "import React from 'react';\nimport TestimoniTitle from '../atoms/Title';\nimport TestimoniText from '../atoms/Lable';\nimport TestimoniFooter from '../molecules/testimoni/TestimoniFooter'; \nimport  '../../styles/Testimoni.css'; \n\nconst TestimoniOrganism = () => {\n  return (\n    <section id=\"Testimoni\">\n      <div className=\"testimoni\">\n        <TestimoniTitle title=\"Testimonial\" />\n        <div className=\"testimoni-content\">\n          <div className=\"testimoni-item\">\n            <TestimoniText text=\"This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com\" />\n            <TestimoniFooter avatarSrc=\"/img/testimoni/Client Image.png\" avatarAlt=\"Avatar 1\" nama=\"Gemma Nolen\" company=\"Google\" />\n          </div>\n\n          <div className=\"testimoni-item\">\n            <TestimoniText text=\"This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com\" />\n            <TestimoniFooter avatarSrc=\"/img/testimoni/Client Image.png\" avatarAlt=\"Avatar 1\" nama=\"Gemma Nolen\" company=\"Google\" />\n          </div>\n\n          <div className=\"testimoni-item\">\n            <TestimoniText text=\"This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com\" />\n            <TestimoniFooter avatarSrc=\"/img/testimoni/Client Image.png\" avatarAlt=\"Avatar 1\" nama=\"Gemma Nolen\" company=\"Google\" />\n          </div>\n          <div className=\"testimoni-item\">\n            <TestimoniText text=\"This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com\" />\n            <TestimoniFooter avatarSrc=\"/img/testimoni/Client Image.png\" avatarAlt=\"Avatar 1\" nama=\"Gemma Nolen\" company=\"Google\" />\n          </div>\n          <div className=\"testimoni-item\">\n            <TestimoniText text=\"This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com\" />\n            <TestimoniFooter avatarSrc=\"/img/testimoni/Client Image.png\" avatarAlt=\"Avatar 1\" nama=\"Gemma Nolen\" company=\"Google\" />\n          </div>\n          <div className=\"testimoni-item\">\n            <TestimoniText text=\"This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com\" />\n            <TestimoniFooter avatarSrc=\"/img/testimoni/Client Image.png\" avatarAlt=\"Avatar 1\" nama=\"Gemma Nolen\" company=\"Google\" />\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport default TestimoniOrganism;"
+        }
+    ]
+}

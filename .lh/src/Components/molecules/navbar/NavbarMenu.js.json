@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/Components/molecules/navbar/NavbarMenu.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1727856807689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1727859284031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n // src/components/molecules/navbar/NavbarMenu.js\n import React from \"react\";\n-import NavbarItem from \"../../atoms/navbar/NavbarItem\";\n+import NavbarItem from \"../../atoms/NavbarItem\";\n \n const NavbarMenu = () => {\n   return (\n     <nav className=\"navbar\">\n"
+                },
+                {
+                    "date": 1727940385037,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n // src/components/molecules/navbar/NavbarMenu.js\n import React from \"react\";\n-import NavbarItem from \"../../atoms/NavbarItem\";\n+import NavbarItem from \"../../atoms/navbar/NavbarItem\";\n \n const NavbarMenu = () => {\n   return (\n     <nav className=\"navbar\">\n"
+                }
+            ],
+            "date": 1727856807689,
+            "name": "Commit-0",
+            "content": "// src/components/molecules/navbar/NavbarMenu.js\nimport React from \"react\";\nimport NavbarItem from \"../../atoms/navbar/NavbarItem\";\n\nconst NavbarMenu = () => {\n  return (\n    <nav className=\"navbar\">\n      <div className=\"navbar-logo\">\n        < NavbarItem label=\"Logo\"/>\n      </div>\n      <ul className=\"navbar-menu\">\n        <NavbarItem label=\"About\" />\n        <NavbarItem label=\"Work\" />\n        <NavbarItem label=\"Contact\" />\n      </ul>\n    </nav>\n  );\n};\n\nexport default NavbarMenu;"
+        }
+    ]
+}

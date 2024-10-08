@@ -1,0 +1,89 @@
+/* Atoms.css */
+
+/* Gaya umum untuk teks */
+.text {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 16px;
+    color: #2D2D2D;
+}
+
+/* Gaya untuk tombol */
+.button {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Warna biru */
+    color: #FFFFFF; /* Warna teks putih */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Warna biru gelap saat hover */
+}
+
+/* Gaya untuk gambar */
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Gaya untuk judul */
+.title {
+    font-family: 'Epilogue', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+/* Gaya untuk input */
+.input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Mengatur lebar penuh */
+}
+
+/* Gaya untuk logo */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2D2D2D;
+}
+
+/* Gaya untuk rating bintang */
+.star-rating {
+    display: flex;
+}
+
+.star {
+    color: gold;
+    font-size: 20px; /* Ukuran bintang */
+}
+
+/* Gaya untuk avatar */
+.avatar {
+    border-radius: 50%; /* Membuat avatar berbentuk bulat */
+    width: 50px; /* Atur lebar avatar */
+    height: 50px; /* Atur tinggi avatar */
+}
+
+/* Gaya untuk item navbar */
+.navbar-item {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-item:hover {
+    color: #444444; /* Warna saat hover */
+}
+
+/* Gaya umum untuk gap */
+.gap {
+    gap: 16px; /* Jarak antar elemen */
+}

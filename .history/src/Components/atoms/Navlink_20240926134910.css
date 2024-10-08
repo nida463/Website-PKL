@@ -1,0 +1,12 @@
+/* NavLink.css */
+.nav-link {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    color: #444444;
+  }
+  
