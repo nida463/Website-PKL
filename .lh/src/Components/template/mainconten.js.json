@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 6,
+            "activePatchIndex": 8,
             "patches": [
                 {
                     "date": 1727858135883,
@@ -32,6 +32,14 @@
                 {
                     "date": 1727939473909,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,69 @@\n+import React, { useState } from \"react\"; // Import useState\r\n+import Navbar from \"../organisms/Navbar\";\r\n+import Header from \"../organisms/Header\";\r\n+import Logo from \"../organisms/Logo\";\r\n+import Skills from \"../organisms/Skills\";\r\n+import Gallery from \"../organisms/Gallery\";\r\n+import Testimoni from \"../organisms/Testimoni\";\r\n+import Contact from \"../organisms/Contact\";\r\n+import { useNavigate } from \"react-router-dom\"; // Import useNavigate\r\n+\r\n+const MainConten = () => {\r\n+  const navigate = useNavigate(); // Gunakan useNavigate untuk navigasi\r\n+  const [isHovered, setIsHovered] = useState(false); // State untuk efek hover\r\n+\r\n+  // Fungsi untuk handle logout\r\n+  const handleLogout = () => {\r\n+    // Hapus token dari localStorage\r\n+    localStorage.removeItem('token');\r\n+    // Arahkan pengguna kembali ke halaman login\r\n+    navigate('/');\r\n+  };\r\n+\r\n+  // Style untuk tombol logout\r\n+  const styles = {\r\n+    logoutButton: {\r\n+      padding: '10px 20px',\r\n+      backgroundColor: '#007bff', // Warna biru\r\n+      color: '#fff',\r\n+      border: 'none',\r\n+      borderRadius: '5px',\r\n+      cursor: 'pointer',\r\n+      transition: 'background-color 0.3s, transform 0.3s',\r\n+      fontSize: '16px',\r\n+    },\r\n+    logoutButtonHover: {\r\n+      backgroundColor: '#0056b3', // Warna biru yang lebih gelap saat hover\r\n+      transform: 'scale(1.05)', // Efek pembesaran\r\n+    },\r\n+  };\r\n+\r\n+  return (\r\n+    <div>\r\n+      <Navbar />\r\n+      <Header />\r\n+      <Logo />\r\n+      <Skills />\r\n+      <Gallery />\r\n+      <Testimoni />\r\n+      <Contact />\r\n+\r\n+      {/* Tombol logout */}\r\n+      <div style={{ textAlign: 'right', margin: '20px' }}>\r\n+        <button\r\n+          onClick={handleLogout}\r\n+          style={{\r\n+            ...styles.logoutButton,\r\n+            ...(isHovered ? styles.logoutButtonHover : {}),\r\n+          }}\r\n+          onMouseEnter={() => setIsHovered(true)} // Mengatur state hover\r\n+          onMouseLeave={() => setIsHovered(false)} // Mengatur state hover\r\n+        >\r\n+          Logout\r\n+        </button>\r\n+      </div>\r\n+    </div>\r\n+  );\r\n+};\r\n+\r\n+export default MainConten;\r\n"
+                },
+                {
+                    "date": 1728450318647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,21 +47,9 @@\n       <Gallery />\r\n       <Testimoni />\r\n       <Contact />\r\n \r\n-      {/* Tombol logout */}\r\n-      <div style={{ textAlign: 'right', margin: '20px' }}>\r\n-        <button\r\n-          onClick={handleLogout}\r\n-          style={{\r\n-            ...styles.logoutButton,\r\n-            ...(isHovered ? styles.logoutButtonHover : {}),\r\n-          }}\r\n-          onMouseEnter={() => setIsHovered(true)} // Mengatur state hover\r\n-          onMouseLeave={() => setIsHovered(false)} // Mengatur state hover\r\n-        >\r\n-          Logout\r\n-        </button>\r\n+      \r\n       </div>\r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1728450327048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n       <Testimoni />\r\n       <Contact />\r\n \r\n       \r\n-      </div>\r\n+      \r\n     </div>\r\n   );\r\n };\r\n \r\n"
                 }
             ],
             "date": 1727858135883,

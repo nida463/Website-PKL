@@ -1,0 +1,78 @@
+.sektoral-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.sektoral-box {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.sektoral-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex: 1;
+  margin-right: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-input:last-child {
+  margin-right: 0;
+}
+
+.search-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sektoral-results {
+  margin-top: 20px;
+}
+
+.sektoral-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sektoral-table th,
+.sektoral-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+.sektoral-table th {
+  background-color: #f2

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/Components/auth/appsroute.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1728444856444,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1728444856444,
+            "name": "Commit-0",
+            "content": "// src/AppRoute.js\r\nimport React from \"react\";\r\nimport { BrowserRouter as Router, Route, Routes, Navigate, useNavigate } from \"react-router-dom\";\r\nimport Navbar from \"./Components/organisms/Navbar\"; // Import Navbar dari organisms\r\nimport Login from \"./Components/auth/Login\";\r\nimport MainConten from \"./Components/template/MainConten\"; // Home page\r\nimport Sektoral from \"./Components/auth/Sektoral\"; // Halaman Sektoral\r\nimport BukuDigital from \"./Components/auth/BukuDigital\"; // Halaman Buku Digital\r\nimport { login } from \"./Components/auth/LoginService\";\r\n\r\nfunction AppRoute() {\r\n    return (\r\n        <Router>\r\n            <Navbar /> {/* Navbar yang akan muncul di semua halaman */}\r\n            <Routes>\r\n\r\n                {/* Route untuk halaman login */}\r\n                <Route path=\"/\" element={<LoginWrapper />} />\r\n\r\n                {/* Route untuk halaman utama (Home), hanya bisa diakses jika sudah login */}\r\n                <Route path=\"/main\" element={<ProtectedRoute><MainConten /></ProtectedRoute>} />\r\n\r\n                {/* Route untuk halaman Sektoral, hanya bisa diakses jika sudah login */}\r\n                <Route path=\"/sektoral\" element={<ProtectedRoute><Sektoral /></ProtectedRoute>} />\r\n\r\n                {/* Route untuk halaman Buku Digital, hanya bisa diakses jika sudah login */}\r\n                <Route path=\"/buku-digital\" element={<ProtectedRoute><BukuDigital /></ProtectedRoute>} />\r\n\r\n            </Routes>\r\n        </Router>\r\n    );\r\n}\r\n\r\n// Fungsi pembungkus untuk login, menambahkan navigasi setelah berhasil login\r\nfunction LoginWrapper() {\r\n    const navigate = useNavigate();\r\n\r\n    const handleLogin = async (nip, password) => {\r\n        try {\r\n            const result = await login(nip, password);\r\n            alert('Login berhasil!');\r\n            // Navigasi ke halaman utama setelah login berhasil\r\n            navigate('/main');\r\n        } catch (error) {\r\n            console.error('Login gagal:', error);\r\n            alert('Login gagal: NIP atau password salah.');\r\n        }\r\n    };\r\n\r\n    return <Login onLogin={handleLogin} />;\r\n}\r\n\r\n// Komponen untuk melindungi route, memastikan pengguna hanya bisa mengakses jika sudah login\r\nfunction ProtectedRoute({ children }) {\r\n    const token = localStorage.getItem('token');\r\n\r\n    if (!token) {\r\n        // Jika tidak ada token, arahkan kembali ke halaman login\r\n        return <Navigate to=\"/\" />;\r\n    }\r\n\r\n    // Jika ada token, render konten yang di-protect\r\n    return children;\r\n}\r\n\r\nexport default AppRoute;\r\n"
+        }
+    ]
+}

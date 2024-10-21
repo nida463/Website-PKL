@@ -1,0 +1,38 @@
+{
+    "sourceFile": "src/styles/Error404.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1728545432809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1728545831997,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \r\n .error-title {\r\n     font-size: 100px;\r\n     font-weight: bold;\r\n-    color: #ff6347; /* Warna merah/oranye terang */\r\n+    color: #8b200d; /* Warna merah/oranye terang */\r\n }\r\n \r\n .error-message {\r\n     font-size: 24px;\r\n"
+                },
+                {
+                    "date": 1728545840581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \r\n .error-title {\r\n     font-size: 100px;\r\n     font-weight: bold;\r\n-    color: #8b200d; /* Warna merah/oranye terang */\r\n+    color: #8b0d0d; /* Warna merah/oranye terang */\r\n }\r\n \r\n .error-message {\r\n     font-size: 24px;\r\n"
+                },
+                {
+                    "date": 1728545849256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \r\n .error-title {\r\n     font-size: 100px;\r\n     font-weight: bold;\r\n-    color: #8b0d0d; /* Warna merah/oranye terang */\r\n+    color: #e70101; /* Warna merah/oranye terang */\r\n }\r\n \r\n .error-message {\r\n     font-size: 24px;\r\n"
+                },
+                {
+                    "date": 1728545860855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n \r\n .error-link {\r\n     display: inline-block;\r\n     padding: 10px 20px;\r\n-    background-color: #ff6347; /* Warna merah/oranye terang */\r\n+    background-color: #ff6347#e70101; /* Warna merah/oranye terang */\r\n     color: white;\r\n     text-decoration: none;\r\n     border-radius: 5px;\r\n }\r\n"
+                },
+                {
+                    "date": 1728545867878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n \r\n .error-link {\r\n     display: inline-block;\r\n     padding: 10px 20px;\r\n-    background-color: #ff6347#e70101; /* Warna merah/oranye terang */\r\n+    background-color: #e70101; /* Warna merah/oranye terang */\r\n     color: white;\r\n     text-decoration: none;\r\n     border-radius: 5px;\r\n }\r\n"
+                }
+            ],
+            "date": 1728545432809,
+            "name": "Commit-0",
+            "content": "/* src/styles/Error404.css */\r\n.error-container {\r\n    text-align: center;\r\n    padding: 50px;\r\n}\r\n\r\n.error-title {\r\n    font-size: 100px;\r\n    font-weight: bold;\r\n    color: #ff6347; /* Warna merah/oranye terang */\r\n}\r\n\r\n.error-message {\r\n    font-size: 24px;\r\n    color: #333;\r\n    margin-bottom: 20px;\r\n}\r\n\r\n.error-link {\r\n    display: inline-block;\r\n    padding: 10px 20px;\r\n    background-color: #ff6347; /* Warna merah/oranye terang */\r\n    color: white;\r\n    text-decoration: none;\r\n    border-radius: 5px;\r\n}\r\n\r\n.error-link:hover {\r\n    background-color: #e5533d; /* Warna hover sedikit lebih gelap */\r\n}\r\n"
+        }
+    ]
+}

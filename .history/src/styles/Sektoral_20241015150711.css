@@ -1,0 +1,128 @@
+/* Struktur umum */
+.sektoral-container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.sektoral-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.sektoral-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-inputs {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    flex: 1 1 150px;
+    min-width: 120px;
+}
+
+.sektoral-input {
+    margin-right: 10px;
+}
+
+.search-button {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    flex: 0 0 100px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.sektoral-results {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.sektoral-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sektoral-table th,
+.sektoral-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.column-number {
+    width: 15px !important;
+    text-align: center;
+}
+
+.column-uraian {
+    width: 45% !important;
+}
+
+.column-kategori {
+    width: 30% !important;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; /* Memisahkan tombol di kanan dan kiri */
+    align-items: center; /* Menyelaraskan secara vertikal */
+    gap: 10px; /* Menambah sedikit jarak antar elemen */
+}
+
+.page-info {
+    margin: 0;
+    font-size: 16px;
+    flex: 1; /* Agar teks di tengah mengambil ruang fleksibel */
+    text-align: center;
+}
+
+
+
+.pagination-button {
+    background-color: #66b3ff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pagination-button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.pagination-button:hover:not(:disabled) {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}

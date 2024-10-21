@@ -1,0 +1,114 @@
+:root {
+  --navbar-color: #FFFFFF; 
+  --logo-font-family: "Epilogue", sans-serif;
+  --logo-font-size: 20px; 
+  --logo-font-weight: 600; 
+  --logo-line-height: 30px; 
+  --menu-font-family: "Epilogue", sans-serif; 
+  --menu-font-size: 17px; 
+  --menu-font-weight: 400; 
+  --menu-line-height: 27px; 
+  --active-color: #007BFF; /* Warna biru untuk item aktif */
+}
+
+.navbar {
+  display: flex !important;
+  width: 100% !important; 
+  height: 78px !important; 
+  justify-content: space-between !important; 
+  align-items: center !important; 
+  background-color: var(--navbar-color) !important; 
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important; 
+  right: 0 !important; 
+  z-index: 999 !important; 
+  box-shadow: 0 2px 10px rgba(255, 254, 254, 0.1) !important; 
+}
+
+/* Styling untuk brand dan menu */
+.navbar-brand {
+  display: flex !important; 
+  align-items: center !important; 
+  text-decoration: none !important; 
+  list-style: none !important; 
+}
+
+.navbar-brand a {
+  font-family: var(--logo-font-family) !important;
+  font-size: var(--logo-font-size) !important;
+  font-weight: var(--logo-font-weight) !important;
+  line-height: var(--logo-line-height) !important;
+  color: #2D2D2D !important; 
+  text-decoration: none !important;
+  margin-left: 10px !important;
+  padding: 42px 24px !important;
+}
+
+.navbar-menu {
+  list-style: none !important;
+  display: flex !important;
+  margin: 20px !important;
+  padding: 0 !important;
+  gap: 30px !important;
+}
+
+.navbar-menu li {
+  margin-left: 20px !important; 
+}
+
+.navbar-item {
+  text-decoration: none !important;
+  color: #333 !important; 
+  font-family: var(--menu-font-family) !important;
+  font-size: var(--menu-font-size) !important; 
+  font-weight: var(--menu-font-weight) !important; 
+  line-height: var(--menu-line-height) !important; 
+  text-align: left !important; 
+  padding: 10px 15px !important; /* Tambahkan padding untuk area klik yang lebih besar */
+  transition: color 0.3s ease !important; /* Animasi transisi warna */
+}
+
+/* Tambahkan efek hover */
+.navbar-item:hover {
+  color: var(--active-color) !important; /* Ubah warna saat hover */
+}
+
+/* Kelas untuk item aktif */
+.navbar-item.active {
+  color: var(--active-color) !important; /* Ubah warna saat aktif */
+  font-weight: bold !important; /* Membuat teks lebih tebal saat aktif */
+  border-bottom: 2px solid var(--active-color) !important; /* Tambahkan garis bawah */
+}
+
+.navbar-menu li:last-child {
+  margin-right: 20px !important; 
+}
+
+.navbar-logo {
+  width: 49px !important; 
+  height: 30px !important; 
+  font-family: var(--logo-font-family) !important;
+  font-size: var(--logo-font-size) !important;
+  font-weight: var(--logo-font-weight) !important;
+  line-height: var(--logo-line-height) !important;
+  color: #2D2D2D !important; 
+  display: flex !important;
+  align-items: center !important; 
+  margin-left: 20px !important;
+}
+
+/* Styling untuk tombol logout */
+.logout-button {
+  background-color: var(--active-color) !important; /* Warna biru */
+  color: white !important; /* Teks berwarna putih */
+  border: none !important; /* Tanpa border */
+  border-radius: 5px !important; /* Sudut yang lebih halus */
+  padding: 10px 15px !important; /* Padding untuk tombol */
+  cursor: pointer !important; /* Menunjukkan bahwa ini adalah tombol */
+  transition: background-color 0.3s ease !important; /* Transisi warna saat hover */
+}
+
+.logout-button:hover {
+  background-color: darkblue !important; /* Warna saat hover */
+}

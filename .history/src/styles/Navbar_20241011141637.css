@@ -1,0 +1,118 @@
+:root {
+  --navbar-color: #FFFFFF; 
+  --logo-font-family: "Epilogue", sans-serif;
+  --logo-font-size: 20px; 
+  --logo-font-weight: 600; 
+  --logo-line-height: 30px; 
+  --menu-font-family: "Epilogue", sans-serif; 
+  --menu-font-size: 17px; 
+  --menu-font-weight: 400; 
+  --menu-line-height: 27px; 
+}
+
+.navbar {
+  display: flex;
+  width: 100%; 
+  height: 78px; 
+  justify-content: space-between; 
+  align-items: center; 
+  background-color: var(--navbar-color); 
+  position: fixed !important;
+  top: 0;
+  left: 0; 
+  right: 0; 
+  z-index: 999; 
+  box-shadow: 0 2px 10px rgba(255, 254, 254, 0.1); 
+}
+
+/* Styling untuk brand dan menu */
+.navbar-brand {
+  display: flex; 
+  align-items: center; 
+  text-decoration: none; 
+  list-style: none; 
+}
+
+.navbar-brand a {
+  font-family: var(--logo-font-family);
+  font-size: var(--logo-font-size);
+  font-weight: var(--logo-font-weight);
+  line-height: var(--logo-line-height);
+  color: #2D2D2D; 
+  text-decoration: none;
+  margin-left: 10px;
+  padding: 42px 24px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0; /* Hapus margin agar tidak ada jarak */
+  padding: 0; /* Hapus padding */
+  gap: 30px;
+}
+
+.navbar-menu li {
+  margin-left: 20px; 
+}
+
+.navbar-item {
+  text-decoration: none;
+  color: #333; 
+  font-family: var(--menu-font-family);
+  font-size: var(--menu-font-size); 
+  font-weight: var(--menu-font-weight); 
+  line-height: var(--menu-line-height); 
+  text-align: left; 
+  padding: 10px 15px; /* Tambahkan padding untuk area klik yang lebih besar */
+  transition: color 0.3s ease; /* Animasi transisi warna */
+}
+
+/* Tambahkan efek hover */
+.navbar-item:hover {
+  color: #007BFF; /* Ubah warna saat hover */
+}
+
+/* Kelas untuk item aktif */
+.navbar-item.active {
+  font-weight: bold; /* Membuat teks lebih tebal saat aktif */
+}
+
+/* Untuk menghapus garis bawah pada item menu */
+.navbar-item:not(.active) {
+  border-bottom: none; /* Pastikan tidak ada garis bawah untuk item yang tidak aktif */
+}
+
+.navbar-menu li:last-child {
+  margin-right: 20px; 
+}
+
+.navbar-logo {
+  width: 49px; 
+  height: 30px; 
+  font-family: var(--logo-font-family);
+  font-size: var(--logo-font-size);
+  font-weight: var(--logo-font-weight);
+  line-height: var(--logo-line-height);
+  color: #2D2D2D; 
+  display: flex;
+  align-items: center; 
+  margin-left: 20px;
+}
+
+/* Styling untuk tombol logout */
+.logout-button {
+  background-color: #007BFF; /* Warna biru */
+  color: white; /* Teks berwarna putih */
+  border: none; /* Tanpa border */
+  border-radius: 5px; /* Sudut yang lebih halus */
+  padding: 5px 15px; /* Padding untuk tombol */
+  cursor: pointer; /* Menunjukkan bahwa ini adalah tombol */
+  transition: background-color 0.3s ease; /* Transisi warna saat hover */
+  height: 40px; /* Set tinggi tombol agar sejajar dengan menu */
+  align-self: center; /* Menjaga tombol sejajar dengan item menu */
+}
+
+.logout-button:hover {
+  background-color: darkblue; /* Warna saat hover */
+}

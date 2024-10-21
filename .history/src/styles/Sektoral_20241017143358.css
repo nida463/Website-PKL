@@ -1,0 +1,184 @@
+/* styles/Sektoral.css */
+
+/* Container for the main component */
+.sektoral-container {
+  padding: 20px;
+  background-color: #f9f9f9; /* Latar belakang yang lebih cerah */
+}
+
+/* Box for the form and results */
+.sektoral-box {
+  max-width: 800px; /* Maksimal lebar kotak */
+  margin: auto; /* Memusatkan kotak */
+  background-color: #fff; /* Latar belakang putih */
+  padding: 20px; /* Ruang dalam kotak */
+  border-radius: 8px; /* Sudut melengkung */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+/* Title styles */
+/* styles/Sektoral.css */
+
+/* Title styles */
+.sektoral-title {
+  text-align: center; /* Memusatkan judul */
+  margin-top: 80px; /* Tambahkan margin atas yang lebih besar */
+  margin-bottom: 20px; /* Jarak bawah judul */
+  font-size: 24px; /* Ukuran font judul */
+  color: #007bff; /* Warna biru untuk judul */
+  animation: fadeIn 0.5s ease-in; /* Tambahkan animasi */
+}
+
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Form styles */
+.sektoral-form {
+  display: flex; /* Menggunakan flexbox untuk baris input */
+  flex-wrap: wrap; /* Mengizinkan membungkus jika tidak muat */
+  align-items: center; /* Menjaga semua elemen di tengah secara vertikal */
+  gap: 10px; /* Jarak antar elemen */
+  justify-content: flex-start; /* Mengatur agar elemen mulai dari kiri */
+  margin-top: 10px; /* Memberikan jarak antara judul dan form */
+}
+
+/* Input styles */
+.sektoral-input {
+  padding: 8px; /* Menambah padding untuk tampilan lebih nyaman */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 140px; /* Menyesuaikan lebar input agar cukup panjang */
+  box-sizing: border-box; /* Menghitung padding dan border dalam lebar */
+}
+
+/* Button styles */
+.search-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 15px; /* Menambah padding untuk tombol */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s; /* Tambahkan efek transformasi */
+  height: 44px; /* Menyesuaikan tinggi tombol agar seimbang dengan input */
+}
+
+/* Button hover effect */
+.search-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Efek pembesaran saat hover */
+}
+
+/* Error message styles */
+.error-message {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Result title styles */
+.result-title {
+  text-align: center; /* Memusatkan judul hasil */
+  font-size: 20px; /* Ukuran font judul hasil */
+  margin: 20px 0; /* Jarak atas dan bawah */
+  animation: slideIn 0.5s ease-in; /* Tambahkan animasi */
+}
+
+/* Slide in animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Result table styles */
+.sektoral-table {
+  width: 100%; /* Lebar penuh tabel */
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.sektoral-table th,
+.sektoral-table td {
+  border: 1px solid #ddd;
+  padding: 10px; /* Menambah padding untuk tampilan lebih nyaman */
+  text-align: left;
+}
+
+/* Menyesuaikan lebar kolom nomor */
+.sektoral-table th:nth-child(1),
+.sektoral-table td:nth-child(1) {
+  width: 50px; /* Lebar kolom nomor */
+}
+
+/* Menyesuaikan lebar kolom Uraian, Kategori, dan Satuan */
+.sektoral-table th:nth-child(2),
+.sektoral-table td:nth-child(2) {
+  width: 250px; /* Lebar kolom Uraian */
+}
+
+.sektoral-table th:nth-child(3),
+.sektoral-table td:nth-child(3) {
+  width: 80px; /* Lebar kolom Satuan */
+}
+
+.sektoral-table th:nth-child(4),
+.sektoral-table td:nth-child(4) {
+  width: 150px; /* Lebar kolom Kategori */
+}
+
+.sektoral-table th {
+  background-color: #007bff; /* Header biru */
+  color: white; /* Teks putih */
+  font-weight: bold;
+}
+
+/* Pagination styles */
+.pagination {
+  display: flex;
+  justify-content: space-between; /* Membuat tombol Previous di kiri dan Next di kanan */
+  align-items: center; /* Membuat konten di tengah secara vertikal */
+  margin-top: 20px;
+}
+
+.pagination-button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Tambahkan efek transformasi */
+}
+
+.pagination-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Efek pembesaran saat hover */
+}
+
+.pagination-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.page-info {
+  flex-grow: 1; /* Memungkinkan informasi halaman mengisi ruang */
+  text-align: center; /* Memusatkan teks informasi halaman */
+}

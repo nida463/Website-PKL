@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 9,
             "patches": [
                 {
                     "date": 1727856807689,
@@ -16,6 +16,34 @@
                 {
                     "date": 1727940385037,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n // src/components/molecules/navbar/NavbarMenu.js\n import React from \"react\";\n-import NavbarItem from \"../../atoms/NavbarItem\";\n+import NavbarItem from \"../../atoms/navbar/NavbarItem\";\n \n const NavbarMenu = () => {\n   return (\n     <nav className=\"navbar\">\n"
+                },
+                {
+                    "date": 1728449703353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,20 +1,29 @@\n // src/components/molecules/navbar/NavbarMenu.js\n import React from \"react\";\n+import { Link } from \"react-router-dom\"; // Mengimpor Link dari react-router-dom\n import NavbarItem from \"../../atoms/navbar/NavbarItem\";\n \n const NavbarMenu = () => {\n   return (\n     <nav className=\"navbar\">\n       <div className=\"navbar-logo\">\n-        < NavbarItem label=\"Logo\"/>\n+        <NavbarItem label=\"Logo\" /> {/* Jika Anda ingin logo ditampilkan */}\n       </div>\n       <ul className=\"navbar-menu\">\n-        <NavbarItem label=\"About\" />\n-        <NavbarItem label=\"Work\" />\n-        <NavbarItem label=\"Contact\" />\n+        <li><Link to=\"/main\"><NavbarItem label=\"Home\" /></Link></li>\n+        <li><Link to=\"/sektoral\"><NavbarItem label=\"Data Sektoral\" /></Link></li>\n+        <li><Link to=\"/buku-digital\"><NavbarItem label=\"Buku Digital\" /></Link></li>\n+        <li>\n\\ No newline at end of file\n+          <button onClick={() => {\n+            localStorage.removeItem('token'); // Hapus token saat logout\n+            window.location.href = '/'; // Arahkan ke halaman login setelah logout\n+          }}>\n+            Logout\n+          </button>\n+        </li>\n       </ul>\n     </nav>\n   );\n };\n \n-export default NavbarMenu;\n+export default NavbarMenu;\n"
+                },
+                {
+                    "date": 1728535459653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n       <div className=\"navbar-logo\">\n         <NavbarItem label=\"Logo\" /> {/* Jika Anda ingin logo ditampilkan */}\n       </div>\n       <ul className=\"navbar-menu\">\n-        <li><Link to=\"/main\"><NavbarItem label=\"Home\" /></Link></li>\n+        <li><Link to=\"/\"><NavbarItem label=\"Home\" /></Link></li>\n         <li><Link to=\"/sektoral\"><NavbarItem label=\"Data Sektoral\" /></Link></li>\n         <li><Link to=\"/buku-digital\"><NavbarItem label=\"Buku Digital\" /></Link></li>\n         <li>\n           <button onClick={() => {\n@@ -25,5 +25,5 @@\n     </nav>\n   );\n };\n \n-export default NavbarMenu;\n\\ No newline at end of file\n+export default NavbarMenu;\n"
+                },
+                {
+                    "date": 1729226248062,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,16 +9,36 @@\n       <div className=\"navbar-logo\">\n         <NavbarItem label=\"Logo\" /> {/* Jika Anda ingin logo ditampilkan */}\n       </div>\n       <ul className=\"navbar-menu\">\n-        <li><Link to=\"/\"><NavbarItem label=\"Home\" /></Link></li>\n-        <li><Link to=\"/sektoral\"><NavbarItem label=\"Data Sektoral\" /></Link></li>\n-        <li><Link to=\"/buku-digital\"><NavbarItem label=\"Buku Digital\" /></Link></li>\n         <li>\n-          <button onClick={() => {\n-            localStorage.removeItem('token'); // Hapus token saat logout\n-            window.location.href = '/'; // Arahkan ke halaman login setelah logout\n-          }}>\n+          <Link to=\"/\" style={{ textDecoration: \"none\" }}> {/* Menambahkan style inline untuk menghapus garis bawah */}\n+            <NavbarItem label=\"Home\" className=\"navbar-item\" />\n+          </Link>\n+        </li>\n+        <li>\n+          <Link to=\"/sektoral\" style={{ textDecoration: \"none\" }}>\n+            <NavbarItem label=\"Data Sektoral\" className=\"navbar-item\" />\n+          </Link>\n+        </li>\n+        <li>\n+          <Link to=\"/buku-digital\" style={{ textDecoration: \"none\" }}>\n+            <NavbarItem label=\"Buku Digital\" className=\"navbar-item\" />\n+          </Link>\n+        </li>\n+        <li>\n+          <Link to=\"/sektoral\" style={{ textDecoration: \"none\" }}>\n+            <NavbarItem label=\"Data Sektoral\" className=\"navbar-item\" />\n+          </Link>\n+        </li>\n+        <li>\n+          <button\n+            className=\"logout-button\"\n+            onClick={() => {\n+              localStorage.removeItem(\"token\"); // Hapus token saat logout\n+              window.location.href = \"/\"; // Arahkan ke halaman login setelah logout\n+            }}\n+          >\n             Logout\n           </button>\n         </li>\n       </ul>\n"
+                },
+                {
+                    "date": 1729226254573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n             <NavbarItem label=\"Buku Digital\" className=\"navbar-item\" />\n           </Link>\n         </li>\n         <li>\n-          <Link to=\"/sektoral\" style={{ textDecoration: \"none\" }}>\n+          <Link to=\"/\" style={{ textDecoration: \"none\" }}>\n             <NavbarItem label=\"Data Sektoral\" className=\"navbar-item\" />\n           </Link>\n         </li>\n         <li>\n"
+                },
+                {
+                    "date": 1729226262823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n             <NavbarItem label=\"Buku Digital\" className=\"navbar-item\" />\n           </Link>\n         </li>\n         <li>\n-          <Link to=\"/\" style={{ textDecoration: \"none\" }}>\n+          <Link to=\"/dataset\" style={{ textDecoration: \"none\" }}>\n             <NavbarItem label=\"Data Sektoral\" className=\"navbar-item\" />\n           </Link>\n         </li>\n         <li>\n"
+                },
+                {
+                    "date": 1729226269412,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n           </Link>\n         </li>\n         <li>\n           <Link to=\"/dataset\" style={{ textDecoration: \"none\" }}>\n-            <NavbarItem label=\"Data Sektoral\" className=\"navbar-item\" />\n+            <NavbarItem label=\"Dat\" className=\"navbar-item\" />\n           </Link>\n         </li>\n         <li>\n           <button\n"
+                },
+                {
+                    "date": 1729226277586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n           </Link>\n         </li>\n         <li>\n           <Link to=\"/dataset\" style={{ textDecoration: \"none\" }}>\n-            <NavbarItem label=\"Dat\" className=\"navbar-item\" />\n+            <NavbarItem label=\"Dataset\" className=\"navbar-item\" />\n           </Link>\n         </li>\n         <li>\n           <button\n"
                 }
             ],
             "date": 1727856807689,

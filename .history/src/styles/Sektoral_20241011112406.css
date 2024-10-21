@@ -1,0 +1,104 @@
+.sektoral-container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.sektoral-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.search-form {
+    margin-bottom: 20px;
+}
+
+.search-inputs {
+    display: flex;
+    justify-content: flex-start; /* Ubah untuk meratakan ke kiri */
+    gap: 10px;
+    flex-wrap: wrap; /* Membuat input lebih responsif */
+}
+
+.search-input {
+    padding: 8px; /* Mengurangi padding */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    flex: 1 1 150px; /* Mengatur lebar input agar lebih konsisten */
+    min-width: 120px; /* Menetapkan lebar minimum */
+}
+
+.search-button {
+    padding: 8px; /* Mengurangi padding */
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 14px; /* Mengubah ukuran font */
+    cursor: pointer;
+    flex: 0 0 100px; /* Ukuran tombol tetap */
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+.sektoral-results {
+    margin-top: 20px;
+    margin-bottom: 20px; /* Memberi jarak di bawah hasil pencarian */
+}
+
+.sektoral-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sektoral-table th, .sektoral-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+/* CSS untuk Pagination */
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; /* Membuat tombol di ujung kiri & kanan */
+    align-items: center;
+}
+
+.page-info {
+    margin: 0 auto; /* Membuat teks "Page X of Y" berada di tengah */
+    font-size: 16px;
+}
+
+.pagination-button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.pagination-button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+
+.pagination-button:hover:not(:disabled) {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Tambahan untuk memberikan jarak antara judul dan tabel */
+.sektoral-results {
+    margin-top: 40px; /* Menambah jarak di atas tabel */
+}

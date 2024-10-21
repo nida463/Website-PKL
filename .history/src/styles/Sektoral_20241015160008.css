@@ -1,0 +1,130 @@
+/* Container untuk seluruh komponen */
+.sektoral-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Gaya untuk kotak pencarian */
+.sektoral-box {
+    margin-bottom: 20px;
+}
+
+/* Judul pencarian */
+.sektoral-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Form pencarian */
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Input dan select dalam form pencarian */
+.search-input {
+    flex: 1 1 20%; /* Menyesuaikan lebar setiap input */
+    min-width: 150px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Tombol pencarian */
+.search-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect pada tombol pencarian */
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+/* Pesan error */
+.error-message {
+    color: red;
+    margin: 10px 0;
+}
+
+/* Gaya untuk hasil pencarian */
+.sektoral-results {
+    margin-top: 20px;
+}
+
+/* Tabel hasil pencarian */
+.sektoral-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.sektoral-table th, .sektoral-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Gaya untuk header tabel */
+.sektoral-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Gaya untuk baris tabel */
+.sektoral-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Gaya untuk pagination */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagination-button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+/* Hover effect pada tombol pagination */
+.pagination-button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+/* Gaya untuk info halaman */
+.page-info {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .search-input {
+        flex: 1 1 100%; /* Membuat input penuh pada perangkat kecil */
+    }
+}

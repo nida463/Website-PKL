@@ -1,0 +1,121 @@
+.sektoral-container {
+    padding: 20px;
+    background-color: #f9f9f9; /* Latar belakang yang lebih cerah */
+  }
+  
+  .sektoral-box {
+    max-width: 800px; /* Maksimal lebar kotak */
+    margin: auto; /* Memusatkan kotak */
+    background-color: #fff; /* Latar belakang putih */
+    padding: 20px; /* Ruang dalam kotak */
+    border-radius: 8px; /* Sudut melengkung */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+  }
+  
+  .sektoral-title {
+    text-align: center; /* Memusatkan judul */
+    margin-bottom: 20px; /* Jarak bawah judul */
+  }
+  
+  .search-form {
+    margin-bottom: 20px; /* Jarak bawah form pencarian */
+  }
+  
+  .search-inputs {
+    display: flex; /* Menampilkan input dalam satu baris */
+    flex-wrap: wrap; /* Membungkus jika tidak cukup ruang */
+    gap: 10px; /* Jarak antar elemen */
+  }
+  
+  .search-input {
+    flex: 1; /* Menggunakan lebar yang proporsional */
+    min-width: 150px; /* Lebar minimum */
+    padding: 10px; /* Ruang dalam input */
+    border: 1px solid #ccc; /* Garis batas abu-abu */
+    border-radius: 4px; /* Sudut melengkung */
+  }
+  
+  .search-button {
+    padding: 10px 20px; /* Ruang dalam button */
+    background-color: #007bff; /* Warna latar belakang button */
+    color: #fff; /* Warna teks putih */
+    border: none; /* Tanpa garis batas */
+    border-radius: 4px; /* Sudut melengkung */
+    cursor: pointer; /* Pointer saat hover */
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3; /* Warna saat hover */
+  }
+  
+  .error-message {
+    color: red; /* Warna teks merah untuk pesan error */
+  }
+  
+  .sektoral-results {
+    margin-top: 20px; /* Jarak atas untuk hasil pencarian */
+  }
+  
+  .sektoral-table {
+    width: 100%; /* Lebar tabel 100% */
+    border-collapse: collapse; /* Menghilangkan jarak antar sel */
+    margin-top: 10px; /* Jarak atas tabel */
+  }
+  
+  .sektoral-table th,
+  .sektoral-table td {
+    border: 1px solid #ddd; /* Garis batas abu-abu untuk sel */
+    padding: 8px; /* Ruang dalam sel */
+    text-align: left; /* Rata kiri untuk teks */
+  }
+  
+  .sektoral-table th {
+    background-color: #f2f2f2; /* Latar belakang abu-abu untuk header */
+  }
+  
+  .sektoral-table td:nth-child(1) {
+    width: 50px; /* Lebar kolom nomor */
+  }
+  
+  .sektoral-table td:nth-child(2) {
+    width: 40%; /* Lebar kolom uraian */
+  }
+  
+  .sektoral-table td:nth-child(3) {
+    width: 15%; /* Lebar kolom satuan */
+  }
+  
+  .sektoral-table td:nth-child(4) {
+    width: 15%; /* Lebar kolom jenis */
+  }
+  
+  .sektoral-table td:nth-child(5) {
+    width: 30%; /* Lebar kolom kategori */
+  }
+  
+  .pagination {
+    display: flex; /* Menampilkan tombol pagination dalam satu baris */
+    align-items: center; /* Rata tengah untuk vertikal */
+    justify-content: space-between; /* Mengatur jarak antar elemen */
+    margin-top: 20px; /* Jarak atas untuk pagination */
+  }
+  
+  .pagination-button {
+    padding: 10px 15px; /* Ruang dalam button pagination */
+    background-color: #007bff; /* Warna latar belakang button pagination */
+    color: #fff; /* Warna teks putih */
+    border: none; /* Tanpa garis batas */
+    border-radius: 4px; /* Sudut melengkung */
+    cursor: pointer; /* Pointer saat hover */
+  }
+  
+  .pagination-button:disabled {
+    background-color: #ccc; /* Warna saat disabled */
+    cursor: not-allowed; /* Pointer tidak aktif */
+  }
+  
+  .page-info {
+    flex-grow: 1; /* Memungkinkan informasi halaman mengisi ruang */
+    text-align: center; /* Memusatkan teks informasi halaman */
+  }
+  

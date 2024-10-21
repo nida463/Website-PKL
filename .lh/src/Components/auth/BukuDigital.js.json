@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 43,
+            "activePatchIndex": 51,
             "patches": [
                 {
                     "date": 1728357880650,
@@ -180,6 +180,38 @@
                 {
                     "date": 1728379468600,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n   };\r\n \r\n   return (\r\n     <div className=\"sektoral-container\">\r\n-        <Navbar>\r\n+        <Navbar/>\r\n       <div className=\"sektoral-box\">\r\n         <h2 className=\"sektoral-title\">Daftar Buku Digital</h2>\r\n         {error && <p className=\"error-message\">{error}</p>}\r\n \r\n"
+                },
+                {
+                    "date": 1728448003424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,8 @@\n   };\r\n \r\n   return (\r\n     <div className=\"sektoral-container\">\r\n-        <Navbar/>\r\n       <div className=\"sektoral-box\">\r\n         <h2 className=\"sektoral-title\">Daftar Buku Digital</h2>\r\n         {error && <p className=\"error-message\">{error}</p>}\r\n \r\n"
+                },
+                {
+                    "date": 1728448014780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n // src/Components/auth/BukuDigital.js\r\n import React, { useState, useEffect } from \"react\";\r\n import axios from \"axios\";\r\n import \"../../styles/Bukudigital.css\";\r\n-import Navbar from \"../organisms/Navbar\";\r\n \r\n+\r\n const BukuDigital = () => {\r\n   const [bukuDigital, setBukuDigital] = useState([]);\r\n   const [loading, setLoading] = useState(true);\r\n   const [error, setError] = useState(null);\r\n"
+                },
+                {
+                    "date": 1728450144203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,8 +37,9 @@\n   };\r\n \r\n   return (\r\n     <div className=\"sektoral-container\">\r\n+      <\r\n       <div className=\"sektoral-box\">\r\n         <h2 className=\"sektoral-title\">Daftar Buku Digital</h2>\r\n         {error && <p className=\"error-message\">{error}</p>}\r\n \r\n"
+                },
+                {
+                    "date": 1728450152825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n   };\r\n \r\n   return (\r\n     <div className=\"sektoral-container\">\r\n-      <\r\n+      <Navbar/>\r\n       <div className=\"sektoral-box\">\r\n         <h2 className=\"sektoral-title\">Daftar Buku Digital</h2>\r\n         {error && <p className=\"error-message\">{error}</p>}\r\n \r\n"
+                },
+                {
+                    "date": 1728450183848,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n   };\r\n \r\n   return (\r\n     <div className=\"sektoral-container\">\r\n-      <Navbar/>\r\n+      <navbar/>\r\n       <div className=\"sektoral-box\">\r\n         <h2 className=\"sektoral-title\">Daftar Buku Digital</h2>\r\n         {error && <p className=\"error-message\">{error}</p>}\r\n \r\n"
+                },
+                {
+                    "date": 1728450195087,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n   };\r\n \r\n   return (\r\n     <div className=\"sektoral-container\">\r\n-      <navbar/>\r\n+      <\r\n       <div className=\"sektoral-box\">\r\n         <h2 className=\"sektoral-title\">Daftar Buku Digital</h2>\r\n         {error && <p className=\"error-message\">{error}</p>}\r\n \r\n"
+                },
+                {
+                    "date": 1728450201102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n // src/Components/auth/BukuDigital.js\r\n import React, { useState, useEffect } from \"react\";\r\n import axios from \"axios\";\r\n import \"../../styles/Bukudigital.css\";\r\n+import Navbar from \"../organisms/Navbar\";\r\n \r\n \r\n const BukuDigital = () => {\r\n   const [bukuDigital, setBukuDigital] = useState([]);\r\n@@ -37,9 +38,9 @@\n   };\r\n \r\n   return (\r\n     <div className=\"sektoral-container\">\r\n-      <\r\n+      <Navbar\r\n       <div className=\"sektoral-box\">\r\n         <h2 className=\"sektoral-title\">Daftar Buku Digital</h2>\r\n         {error && <p className=\"error-message\">{error}</p>}\r\n \r\n"
+                },
+                {
+                    "date": 1728535078191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n   };\r\n \r\n   return (\r\n     <div className=\"sektoral-container\">\r\n-      <Navbar\r\n+      {/* <Navbar/> */}\r\n       <div className=\"sektoral-box\">\r\n         <h2 className=\"sektoral-title\">Daftar Buku Digital</h2>\r\n         {error && <p className=\"error-message\">{error}</p>}\r\n \r\n"
                 }
             ],
             "date": 1728357880650,

@@ -1,0 +1,42 @@
+{
+    "sourceFile": "src/Components/auth/Layout.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1728446316592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1728446748925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,31 +0,0 @@\n-// src/Components/auth/Layout.js\r\n-import React from \"react\";\r\n-import { Link, useNavigate } from \"react-router-dom\";\r\n-\r\n-const Layout = ({ children }) => {\r\n-  const navigate = useNavigate();\r\n-  \r\n-  // Fungsi untuk logout\r\n-  const handleLogout = () => {\r\n-    localStorage.removeItem('token'); // Hapus token dari localStorage\r\n-    navigate('/'); // Arahkan kembali ke halaman login\r\n-  };\r\n-\r\n-  return (\r\n-    <div>\r\n-      <nav className=\"navbar\">\r\n-        <ul>\r\n-          <li><Link to=\"/main\">Home</Link></li>\r\n-          <li><Link to=\"/sektoral\">Data Sektoral</Link></li>\r\n-          <li><Link to=\"/buku-digital\">Buku Digital</Link></li>\r\n-          <li><button onClick={handleLogout}>Logout</button></li>\r\n-        </ul>\r\n-      </nav>\r\n-      <div className=\"content\">\r\n-        {children}\r\n-      </div>\r\n-    </div>\r\n-  );\r\n-};\r\n-\r\n-export default Layout;\r\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1728447379028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,31 @@\n-\n+// src/Components/auth/Layout.js\r\n+import React from 'react';\r\n+import { Link, useNavigate } from 'react-router-dom';\r\n+import \"../../styles/Navbar.css\"; // Sesuaikan dengan file CSS untuk styling\r\n+\r\n+const Layout = ({ children }) => {\r\n+  const navigate = useNavigate();\r\n+\r\n+  const handleLogout = () => {\r\n+    localStorage.removeItem('token'); // Hapus token saat logout\r\n+    navigate('/'); // Arahkan ke halaman login setelah logout\r\n+  };\r\n+\r\n+  return (\r\n+    <div>\r\n+      <nav className=\"navbar\">\r\n+        <ul className=\"navbar-menu\">\r\n+          <li><Link to=\"/main\">Home</Link></li>\r\n+          <li><Link to=\"/sektoral\">Data Sektoral</Link></li>\r\n+          <li><Link to=\"/buku-digital\">Buku Digital</Link></li>\r\n+          <li><button onClick={handleLogout}>Logout</button></li>\r\n+        </ul>\r\n+      </nav>\r\n+      <div className=\"content\">\r\n+        {children} {/* Render konten halaman di sini */}\r\n+      </div>\r\n+    </div>\r\n+  );\r\n+};\r\n+\r\n+export default Layout;\r\n"
+                },
+                {
+                    "date": 1728448290737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,31 +0,0 @@\n-// src/Components/auth/Layout.js\r\n-import React from 'react';\r\n-import { Link, useNavigate } from 'react-router-dom';\r\n-import \"../../styles/Navbar.css\"; // Sesuaikan dengan file CSS untuk styling\r\n-\r\n-const Layout = ({ children }) => {\r\n-  const navigate = useNavigate();\r\n-\r\n-  const handleLogout = () => {\r\n-    localStorage.removeItem('token'); // Hapus token saat logout\r\n-    navigate('/'); // Arahkan ke halaman login setelah logout\r\n-  };\r\n-\r\n-  return (\r\n-    <div>\r\n-      <nav className=\"navbar\">\r\n-        <ul className=\"navbar-menu\">\r\n-          <li><Link to=\"/main\">Home</Link></li>\r\n-          <li><Link to=\"/sektoral\">Data Sektoral</Link></li>\r\n-          <li><Link to=\"/buku-digital\">Buku Digital</Link></li>\r\n-          <li><button onClick={handleLogout}>Logout</button></li>\r\n-        </ul>\r\n-      </nav>\r\n-      <div className=\"content\">\r\n-        {children} {/* Render konten halaman di sini */}\r\n-      </div>\r\n-    </div>\r\n-  );\r\n-};\r\n-\r\n-export default Layout;\r\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1728448299696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,35 @@\n+// src/Components/auth/Layout.js\r\n+import React from 'react';\r\n+import { Link, useNavigate } from 'react-router-dom';\r\n+import NavbarItem from '../molecules/navbar/NavbarItem'; // Pastikan path ini benar\r\n+import \"../../styles/Navbar.css\"; // Sesuaikan dengan file CSS untuk styling\r\n+\r\n+const Layout = ({ children }) => {\r\n+  const navigate = useNavigate();\r\n+\r\n+  const handleLogout = () => {\r\n+    localStorage.removeItem('token'); // Hapus token saat logout\r\n+    navigate('/'); // Arahkan ke halaman login setelah logout\r\n+  };\r\n+\r\n+  return (\r\n+    <div>\r\n+      <nav className=\"navbar\">\r\n+        <div className=\"navbar-logo\">\r\n+          <NavbarItem label=\"Logo\" /> {/* Logo di sebelah kiri */}\r\n+        </div>\r\n+        <ul className=\"navbar-menu\">\r\n+          <li><Link to=\"/main\">Home</Link></li>\r\n+          <li><Link to=\"/sektoral\">Data Sektoral</Link></li>\r\n+          <li><Link to=\"/buku-digital\">Buku Digital</Link></li>\r\n+          <li><button onClick={handleLogout}>Logout</button></li>\r\n+        </ul>\r\n+      </nav>\r\n+      <div className=\"content\">\r\n+        {children} {/* Render konten halaman di sini */}\r\n+      </div>\r\n+    </div>\r\n+  );\r\n+};\r\n+\r\n+export default Layout;\r\n"
+                },
+                {
+                    "date": 1728448345333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n // src/Components/auth/Layout.js\r\n import React from 'react';\r\n import { Link, useNavigate } from 'react-router-dom';\r\n-import NavbarItem from '../molecules/navbar/NavbarItem'; // Pastikan path ini benar\r\n+import Navbar from '../molecules/navbar/NavbarItem'; // Pastikan path ini benar\r\n import \"../../styles/Navbar.css\"; // Sesuaikan dengan file CSS untuk styling\r\n \r\n const Layout = ({ children }) => {\r\n   const navigate = useNavigate();\r\n@@ -32,5 +32,4 @@\n   );\r\n };\r\n \r\n export default Layout;\r\n-\n"
+                },
+                {
+                    "date": 1728448355114,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n // src/Components/auth/Layout.js\r\n import React from 'react';\r\n import { Link, useNavigate } from 'react-router-dom';\r\n-import NavbarMenu from '../molecules/navbar/Navbarm'; // Pastikan path ini benar\r\n+import NavbarMenu from '../molecules/navbar/NavbarMenu'; // Pastikan path ini benar\r\n import \"../../styles/Navbar.css\"; // Sesuaikan dengan file CSS untuk styling\r\n \r\n const Layout = ({ children }) => {\r\n   const navigate = useNavigate();\r\n"
+                }
+            ],
+            "date": 1728446316592,
+            "name": "Commit-0",
+            "content": "// src/Components/auth/Layout.js\r\nimport React from \"react\";\r\nimport { Link, useNavigate } from \"react-router-dom\";\r\n\r\nconst Layout = ({ children }) => {\r\n  const navigate = useNavigate();\r\n  \r\n  // Fungsi untuk logout\r\n  const handleLogout = () => {\r\n    localStorage.removeItem('token'); // Hapus token dari localStorage\r\n    navigate('/'); // Arahkan kembali ke halaman login\r\n  };\r\n\r\n  return (\r\n    <div>\r\n      <nav className=\"navbar\">\r\n        <ul>\r\n          <li><Link to=\"/main\">Home</Link></li>\r\n          <li><Link to=\"/sektoral\">Data Sektoral</Link></li>\r\n          <li><Link to=\"/buku-digital\">Buku Digital</Link></li>\r\n          <li><button onClick={handleLogout}>Logout</button></li>\r\n        </ul>\r\n      </nav>\r\n      <div className=\"content\">\r\n        {children}\r\n      </div>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default Layout;\r\n"
+        }
+    ]
+}

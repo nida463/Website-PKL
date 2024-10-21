@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/Components/Page.js/Error404.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1728545394856,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1728545394856,
+            "name": "Commit-0",
+            "content": "// src/Components/Page.js/Error404.js\r\nimport React from \"react\";\r\nimport '../../styles/Error404.css';  // Pastikan path-nya benar\r\n\r\nfunction Error404() {\r\n    return (\r\n        <div className=\"error-container\">\r\n            <h1 className=\"error-title\">404</h1>\r\n            <p className=\"error-message\">Oops! Halaman yang kamu cari tidak ditemukan.</p>\r\n            <a href=\"/\" className=\"error-link\">Kembali ke Beranda</a>\r\n        </div>\r\n    );\r\n}\r\n\r\nexport default Error404;\r\n"
+        }
+    ]
+}

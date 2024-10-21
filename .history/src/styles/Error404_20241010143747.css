@@ -1,0 +1,30 @@
+/* src/styles/Error404.css */
+.error-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.error-title {
+    font-size: 100px;
+    font-weight: bold;
+    color: #e70101; /* Warna merah/oranye terang */
+}
+
+.error-message {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.error-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e70101; /* Warna merah/oranye terang */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.error-link:hover {
+    background-color: #e5533d; /* Warna hover sedikit lebih gelap */
+}

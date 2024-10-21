@@ -1,0 +1,120 @@
+/* Kontainer utama dataset */
+.dataset-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-top: 80px; /* Tambahkan padding-top untuk memberikan jarak dari navbar */
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+/* Judul dataset */
+.dataset-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Konten utama dengan dua kolom */
+.dataset-content {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+/* Kolom kiri (untuk OPD) */
+.left-column {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input pencarian */
+.dataset-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Daftar OPD */
+.opd-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Item OPD */
+.opd-item {
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Item OPD terpilih */
+.opd-item.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Gaya kartu untuk OPD */
+.card {
+  border: 1px solid #007bff;
+  border-radius: 8px;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+/* Kolom kanan (untuk hasil dataset) */
+.right-column {
+  flex: 2;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Daftar hasil dataset */
+.result-list {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+/* Item hasil dataset */
+.data-item {
+  margin-bottom: 20px;
+}
+
+.data-item .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.data-item .card-text {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+/* Pesan error */
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Navbar dengan posisi fixed */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999; /* Pastikan navbar berada di atas konten */
+}
